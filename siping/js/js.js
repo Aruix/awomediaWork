@@ -18,3 +18,36 @@
   win.addEventListener(resizeEvt, recalc, false);
   doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+$(function(){
+  function bannerIndex(){
+    var w = $("body").css('width'),
+        h = (parseInt(w)*0.389583)+'px';
+    $("#swiperIndex").css({
+      "height":h
+    });
+    $(".index-banner").css("height",h);
+    var mySwiper = $('#swiperIndex').swiper({
+      mode: 'vertical',
+      direction:"vertical",
+      effect:"fade",
+      pagination : '.pagination',
+      paginationClickable :true,
+      onFirstInit:function(swiper){
+        var pw = $(".index-banner .pagination")[0].offsetHeight;
+        $(".index-banner .pagination").css({
+          'height':pw,
+          "bottom":0
+        });
+      },
+      onInit:function(swiper){
+        var pw = $(".index-banner .pagination")[0].offsetHeight;
+        $(".index-banner .pagination").css({
+          'height':pw,
+          "bottom":0
+        });
+      }
+    });
+  }
+  bannerIndex();
+
+})
