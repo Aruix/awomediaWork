@@ -26,6 +26,7 @@ $(function(){
       "height":h
     });
     $(".index-banner").css("height",h);
+    $(".content-k .content").eq(0).fadeIn(0);
     var mySwiper = $('#swiperIndex').swiper({
       mode: 'vertical',
       direction:"vertical",
@@ -39,6 +40,10 @@ $(function(){
           "bottom":0
         });
       },
+      onSlideChangeEnd:function(swiper){
+        var index = swiper.activeIndex;
+        $(".content-k .content").fadeOut().eq(index).fadeIn(100);
+      },
       onInit:function(swiper){
         var pw = $(".index-banner .pagination")[0].offsetHeight;
         $(".index-banner .pagination").css({
@@ -47,6 +52,20 @@ $(function(){
         });
       }
     });
+    $(".arrow-top").click(function(){
+      if(mySwiper.hasOwnProperty('swipePrev')){
+        mySwiper.swipePrev();
+      }else{
+        mySwiper.slidePrev();
+      }
+    });
+    $(".arrow-bottom").click(function(){
+      if(mySwiper.hasOwnProperty('swipeNext')){
+        mySwiper.swipeNext();
+      }else{
+        mySwiper.slideNext();
+      }
+    })
   }
   bannerIndex();
 

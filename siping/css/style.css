@@ -3,6 +3,10 @@ html,body{
   padding:0;
   width: 100%;
   font-size: 20px;
+  background-color: #f9f9f9;
+}
+a:link{
+  text-decoration: none;
 }
 .content{
   margin: auto;
@@ -63,18 +67,205 @@ html,body{
   width: 492px;
   width: 4.92rem;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
 }
-/* 测试用的 */
-.p1{
-  background-color: blue;
+.index-banner .arrow-top,.index-banner .arrow-bottom{
+  width: 50px;
+  width: 0.5rem;
+  height: 20px;
+  height: 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 23px auto;
+  margin: 0.23rem auto;
+  cursor: pointer;
 }
-.p2{
-  background-color: green;
+.index-banner .arrow-top{
+  background-image: url('../img/arrow-top.png');
+  top: 0;
 }
-.p3{
-  background-color: orange;
+.index-banner .arrow-bottom{
+  background-image: url('../img/arrow-bottom.png');
+  bottom: 0;
 }
-.p4{
-  background-color: yellow;
+/* 首页幻灯文字内容 */
+.content-k .content{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.content-k.content .title,.content-k.content .text,.content-k.content .srcs{
+  margin: atuo 62px auto 50px;
+  margin: auto 0.62rem auto 0.5rem;
+  color: white;
+  text-align: justify;
+}
+.content-k.content .title{
+  font-size: 40px;
+  font-size: 0.4rem;
+  max-height: 110px;
+  max-height: 1.1rem;
+  overflow: hidden;
+  line-height: 59px;
+  line-height: 0.59rem;
+  margin-top: 96px;
+  margin-top: 0.96rem;
+}
+.index-banner .swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+.content-k.content .text{
+  font-size: 20px;
+  font-size: 0.2rem;
+  line-height: 30px;
+  line-height: 0.3rem;
+  max-height: 236px;
+  max-height: 2.36rem;
+  margin-top: 35px;
+  margin-top: 0.35rem;
+  margin-bottom: 17px;
+  margin-bottom: 0.17rem;
+  overflow: hidden;
+}
+.content-k.content .srcs{
+  padding:6px 8px;
+  padding: 0.06rem 0.08rem;
+  padding-right: 37px;
+  padding-right: 0.37rem;
+  border: 1px solid #a0a09f;
+  font-size: 18px;
+  font-size: 0.18rem;
+  background-image: url(../img/sanjiao.png);
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  background-position: 90% center;
+}
+/* 头部收藏关注下载 */
+.header-top{
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dddddd;
+  font-size: 14px;
+  font-size: 0.14rem;
+}
+ .header-top .content{
+  height: 40px;
+  height: 0.4rem;
+}
+.header-top .sc,.header-top .gz,.header-top .xz{
+  float: left;
+  color: #5b5c62;
+  margin-right: 24px;
+  margin-right: 0.24rem;
+  margin-top: 10px;
+  margin-top: 0.1rem;
+}
+.header-top .el,.header-top .dl,.header-top .zc{
+  float: right;
+  color: #5b5c62;
+  margin-top: 10px;
+  margin-top: 0.1rem;
+}
+.header-top .sc{
+  padding-left: 22px;
+  padding-left: 0.22rem;
+  background: url(../img/header-sc.png) no-repeat left center;
+  background-size: auto 80%;
+}
+.header-top .gz{
+  padding-left: 20px;
+  padding-left: 0.20rem;
+  background: url(../img/header-gz.png) no-repeat left center;
+  background-size: auto 80%;
+}
+.header-top .xz{
+  padding-left: 20px;
+  padding-left: 0.2rem;
+  background: url(../img/header-xz.png) no-repeat left center;
+  background-size: auto 80%;
+}
+.header-top .el{
+  margin-right: 34px;
+  margin-right: 0.34rem;
+}
+.header-top .dl{
+  padding-right: 13px;
+  padding-right: 0.13rem;
+  border-right: 1px solid #86868b;
+  padding-right: 13px;
+  margin-right: 0.13rem;
+  color: #d94832;
+}
+.header-top .zc{
+  margin-right: 28px;
+  margin-right: 0.28rem;
+}
+.header-bottom .content{
+  height: 136px;
+  height: 1.36rem;
+}
+.header-bottom .logo-img{
+  float: left;
+  width: 300px;
+  width: 3rem;
+  height: 60px;
+  height: 0.6rem;
+  margin-top: 36px;
+  margin-top: 0.36rem;
+}
+.logo-img img{
+  width: 100%;
+  height: 100%;
+}
+.header-bottom #search{
+  float: left;
+  position: relative;
+  width: 250px;
+  width: 2.5rem;
+  height: 34px;
+  height: 0.34rem;
+  margin: 46px auto auto 36px;
+  margin: 0.46rem auto auto 0.36rem;
+  border: 1px solid #afafaf;
+  overflow: hidden;
+}
+#search .text{
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 12px;
+  padding-left: 0.12rem;
+  outline: none;
+}
+#search .sub{
+  position: absolute;
+  height: 100%;
+  width: 34px;
+  width: 0.34rem;
+  top: 0;
+  right:0;
+  border: none;
+  background: #f9f9f9 url(../img/search.png) no-repeat left center;
+  background-size: auto 70%;
+}
+.header-bottom .ad{
+  margin-top: 16px;
+  margin-top: 0.16rem;
+  float: right;
+  width: 500px;
+  width: 5rem;
+  height: 100px;
+  height: 1rem;
+}
+.ad img{
+  width: 100%;
+  height: 100%;
 }

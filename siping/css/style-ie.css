@@ -58,6 +58,27 @@ html,body{
   right: 0;
   background-color: rgba(0,0,0,0.5);
 }
+.index-banner .arrow-top,.index-banner .arrow-bottom{
+  width: 50px;
+  width: 0.5rem;
+  height: 20px;
+  height: 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 23px auto;
+  margin: 0.23rem auto;
+}
+.index-banner .arrow-top{
+  background-image: url('../img/arrow-top.png');
+  top: 0;
+}
+.index-banner .arrow-bottom{
+  background-image: url('../img/arrow-bottom.png');
+  bottom: 0;
+}
 /* 测试用的 */
 .p1{
   background-color: blue;
