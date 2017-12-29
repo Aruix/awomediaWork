@@ -68,5 +68,17 @@ $(function(){
     })
   }
   bannerIndex();
-
+  // 返回顶部
+  $(".retop").click(function(){
+    $("html").animate({ scrollTop: 0 }, 500);
+  })
+  //页面滚动事件
+  $(document).scroll(function(){
+    var x = $("html")[0].scrollTop;
+    if(x>100){
+      $(".retop").fadeIn(200);
+    }else{
+      $(".retop").fadeOut(200);
+    }
+  })
 })
