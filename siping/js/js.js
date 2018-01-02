@@ -81,4 +81,25 @@ $(function(){
       $(".retop").fadeOut(200);
     }
   })
+  function swiperList(){
+    var swiper2 = $('#swiperIndex2').swiper({
+      pagination : '.pagination2',
+      paginationClickable :true,
+      onSlideChangeEnd:function(swiper){
+        var index = swiper.activeIndex;
+        $(".list-banner .setting .title-list")
+        .removeClass('active').eq(index).addClass("active");
+      }
+    })
+  }
+  swiperList();
+  // 菜单切换按钮
+  $(".ownswip-title .text").click(function(){
+    var index = $(this).index();
+    $(this).parent().find(".textt").toggleClass("action")
+    $(this).parents('.ownswip-title')
+    .nextAll('.content').children('.content-t')
+    .removeClass('action').eq(index)
+    .addClass('action');
+  })
 })
