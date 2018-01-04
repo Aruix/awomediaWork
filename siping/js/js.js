@@ -102,4 +102,18 @@ $(function(){
     .removeClass('action').eq(index)
     .addClass('action');
   })
+  // 查看全部
+  $(".seeq").click(function(){
+    if($(this).html()=="查看全部"){
+      $("#newCon").css({
+        "height":"auto"
+      })
+      $(this).html("收起全部");
+    }else{
+      $("#newCon").css({
+        "height":"300px"
+      })
+      $(this).html("查看全部");
+    }
+  })
 })
