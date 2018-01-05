@@ -33,16 +33,16 @@ $(function(){
       effect:"fade",
       pagination : '.pagination',
       paginationClickable :true,
+      onSlideChangeEnd:function(swiper){
+        var index = swiper.activeIndex;
+        $(".content-k .content").fadeOut().eq(index).fadeIn(100);
+      },
       onFirstInit:function(swiper){
         var pw = $(".index-banner .pagination")[0].offsetHeight;
         $(".index-banner .pagination").css({
           'height':pw,
           "bottom":0
         });
-      },
-      onSlideChangeEnd:function(swiper){
-        var index = swiper.activeIndex;
-        $(".content-k .content").fadeOut().eq(index).fadeIn(100);
       },
       onInit:function(swiper){
         var pw = $(".index-banner .pagination")[0].offsetHeight;
@@ -116,4 +116,35 @@ $(function(){
       $(this).html("查看全部");
     }
   })
+  // 图集
+  function swiperPic(){
+    var swiper3 = $('#swiperPic').swiper({
+      //pagination : '.pagination2',
+      paginationClickable :true,
+      keyboardControl : true,
+      onSlideChangeEnd:function(swiper){
+        var index = swiper.activeIndex;
+        $(".num .zn").html(index+1);
+        $(".banner-desc .title-list").removeClass('action')
+        .eq(index).addClass("action")
+      },
+      onFirstInit:function(swiper){
+        var pw = $('#swiperPic .swiper-slide').length;
+        $(".num .zs").html(pw);
+      },
+      onInit:function(swiper){
+        var pw = $('#swiperPic .swiper-slide').length;
+        $(".num .zs").html(pw);
+      }
+    })
+  }
+  swiperPic();
+  function bannerBj(){
+    var swiper4 = $('#bannerTj').swiper({
+      paginationClickable :true,
+      pagination : '.pagination3',
+      slidesPerView : 'auto'
+    })
+  }
+  bannerBj();
 })
