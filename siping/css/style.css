@@ -5,6 +5,10 @@ html,body{
   font-size: 20px;
   background-color: #f9f9f9;
 }
+@font-face {
+  font-family: intitle;
+  src: url(title.otf);
+}
 a:link{
   text-decoration: none;
 }
@@ -384,8 +388,8 @@ a:link{
 .ownswip-title{
   width: 100%;
   overflow: hidden;
-  margin-bottom: 34px;
-  margin-bottom: 0.34rem;
+  margin-bottom: 22px;
+  margin-bottom: 0.22rem;
 }
 .ownswip-title .text{
   width: 50%;
@@ -397,8 +401,30 @@ a:link{
   width: 100%;
   height: auto;
 }
-.ownswip-title .text img.action{
+.ownswip-title .text .textt{
   display: block;
+  font-family: "intitle";
+  width: 100%;
+  text-align: center;
+  padding-top: 12px;
+  border-top: 2px solid #dfdfdf;
+  color: #7d746a;
+  font-style: italic;
+  font-size: 28px;
+  font-size: 0.28rem;
+}
+.ownswip-title .text .textt.txt1{
+  font-size: 22px;
+  padding-top: 8px;
+  font-size: 0.22rem;
+}
+.ownswip-title .text img.action{
+  /* display: block; */
+  display: none;
+}
+.ownswip-title .text .textt.action{
+  color: #d94833;
+  border-top-color: #d9462f;
 }
 .ownswip .content{
   width: 100%;
@@ -451,6 +477,13 @@ a:link{
   position: relative;
 }
 #swiperIndex2{
+  width: 100%;
+  height: 100%;
+}
+#swiperIndex2 .swiper-slide{
+  /* width: 100%!important; */
+}
+#swiperIndex2 .swiper-slide img{
   width: 100%;
   height: 100%;
 }
@@ -540,6 +573,12 @@ a:link{
   width: 1.46rem;
   display: block;
   margin: 0 auto 0 auto;
+  font-size: 26px;
+  font-size: 0.26rem;
+  font-family: "intitle";
+  color: #d94832;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 .tzgg .tzgg-list{
   display: block;
@@ -586,11 +625,25 @@ a:link{
 .list2 .list-right .lm-list.lr{
   float: right;
 }
-.lm-list .title{
+.lm-list .titlex{
   display: block;
   width: 100%;
-  margin-bottom: 22px;
-  margin-bottom: 0.22rem;
+  margin-bottom: 17px;
+  margin-bottom: 0.17rem;
+  border-top: 2px solid #dfdfdf;
+}
+.lm-list .titlex a{
+  display: inline-block;
+  padding: 10px 26px 0 18px;
+  padding: 0.1rem 0.26rem 0 0.18rem;
+  position: relative;
+  top: -2px;
+  font-family: "intitle";
+  color: #d95945;
+  border-top: 2px solid #d95945;
+  font-size: 25px;
+  font-size: 0.25rem;
+  font-style: italic;
 }
 .lm-list .lm-list-k1{
   display: block;
@@ -727,6 +780,10 @@ a:link{
   height: 2rem;
   float: left;
   overflow: hidden;
+}
+.list3 .titlex a,.list4 .titlex a{
+  font-size: 22px;
+  font-size: 0.22rem;
 }
 .list3 .lm-list.lr{
   float: right;
@@ -865,11 +922,35 @@ a:link{
   margin: 0;
   white-space: nowrap;
 }
+.list4{
+  overflow: hidden;
+}
 .list5 img.title{
   width: 100%;
   display: block;
   margin-bottom: 36px;
   margin-bottom: 0.36rem;
+}
+.list5 .titlex{
+  display: block;
+  width: 100%;
+  margin-bottom: 22px;
+  margin-bottom: 0.22rem;
+  border-top: 2px solid #dfdfdf;
+  text-align: center;
+}
+.list5 .titlex a{
+  display: inline-block;
+  padding: 10px 56px 0 48px;
+  padding: 0.1rem 0.56rem 0 0.48rem;
+  position: relative;
+  top: -2px;
+  font-family: "intitle";
+  color: #d95945;
+  border-top: 2px solid #d95945;
+  font-size: 22px;
+  font-size: 0.22rem;
+  font-style: italic;
 }
 .list5 .cont{
   width: 1300px;
@@ -1225,8 +1306,13 @@ a:link{
   font-size: 16px;
   font-size: 0.16rem;
 }
-.news .desc .date{
+.news .desc .date,.news .desc .numa{
   float: left;
+  margin-right: 10px
+}
+.news .desc .numa{
+  padding-left: 10px;
+  border-left: 1px solid #828282;
 }
 .news .desc .author{
   float: right;
@@ -1234,6 +1320,14 @@ a:link{
 .list-con .list-left .news .cons{
   height: 300px;
   overflow: hidden;
+}
+.list-con .list-left .news .cons .player{
+  width: 700px;
+  width: 7rem;
+  height: 393.75px;
+  height: 3.9375rem;
+  margin: 20px auto;
+  background-color: black;
 }
 .list-con .list-left .news .seeq{
   color: #e62819;
@@ -1246,6 +1340,7 @@ a:link{
   background-color: rgba(0,0,0,0);
   text-decoration: underline;
   outline: none;
+  cursor: pointer;
 }
 .list-con .list-left .newComm,.plsub .newComm{
   margin-top: 152px;
@@ -1494,6 +1589,9 @@ form textarea{
   width: 100%;
   height: 100%;
 }
+#swiperPic .swiper-slide{
+  /* width: 100%!important; */
+}
 .pic-banner #swiperPic .swiper-slide img{
   width: 100%;
   height: 100%;
@@ -1533,10 +1631,9 @@ form textarea{
 }
 .pic-con .banner-desc .dz{
   float: right;
-  margin-right: 68px;
-  margin-right: 0.68rem;
-  padding: 60px 0.14rem 14px 56px;
-  padding: 0.6rem 0.14rem 0.14rem 0.4rem;
+  margin-right: 20px;
+  padding: 60px 0.5rem 14px 0.5rem;
+  padding: 0.6rem 0.5rem 0.14rem 0.5rem;
   color: #504750;
   font-size: 15px;
   font-size: 0.15rem;
@@ -1544,8 +1641,8 @@ form textarea{
   background: url(../img/xinicon.png) no-repeat;
   background-size: 40px auto;
   background-size: 0.4rem auto;
-  background-position: 32px 8px;
-  background-position: 0.32rem 0.08rem;
+  background-position: center 8px;
+  background-position: center 0.08rem;
 }
 .banner-set{
   overflow: hidden;
