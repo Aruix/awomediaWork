@@ -41,10 +41,21 @@
           <a href="" class="nav-l">首页</a>
           >
           <a href="" class="nav-n">国内</a></div>
-        <form action="" id="search">
-          <input class="text" type="text" placeholder="搜索...">
-          <input class="sub" type="submit" value="">
-        </form>
+          <div class="search-k">
+            <div class="module-k">
+              <!-- date-id中是传入的模块的参数 -->
+              <div class="module-c action" data-id="1" >新闻</div>
+              <div class="module-c" data-id="2">图片</div>
+              <div class="module-c" data-id="3">下载</div>
+              <div class="module-c" data-id="4">专题</div>
+            </div>
+            <form action="" id="search">
+              <input class="text" type="text" placeholder="搜索...">
+              <!-- value属性默认传入第一个模块的id -->
+              <input id="mod" type="hidden" value="1" name="" >
+              <input class="sub" type="submit" value="">
+            </form>
+          </div>
       </div>
     </div>
 

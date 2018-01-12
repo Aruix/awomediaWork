@@ -227,17 +227,38 @@ a:link{
   width: 100%;
   height: 100%;
 }
-.header-bottom #search{
+.header-bottom .search-k{
   float: left;
+  margin: 46px auto auto 36px;
+  margin: 0.46rem auto auto 0.36rem;
+  position: relative;
+  top: 12px;
+  top: 0.12rem;
+}
+.header-bottom #search{
   position: relative;
   width: 250px;
   width: 2.5rem;
   height: 34px;
   height: 0.34rem;
-  margin: 46px auto auto 36px;
-  margin: 0.46rem auto auto 0.36rem;
   border: 1px solid #afafaf;
   overflow: hidden;
+}
+.search-k .module-k{
+  position: absolute;
+  top: 26px;
+  top: -0.26rem;
+}
+.search-k .module-k .module-c{
+  float: left;
+  font-size: 14px;
+  font-size: 0.14rem;
+  margin-right: 0.1rem;
+  color: #afafaf;
+  cursor: pointer;
+}
+.search-k .module-k .module-c.action{
+  color: #db3820;
 }
 #search .text{
   position: absolute;
@@ -1104,7 +1125,7 @@ a:link{
   background-color: #fbfbfb;
   border-bottom: 1px solid #e2e2e2;
 }
-.page-list #search{
+.page-list .search-k{
   float: right;
   margin-right: 8px;
   margin-right: 0.08rem;

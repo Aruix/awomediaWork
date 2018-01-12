@@ -37,10 +37,21 @@
     <div class="header-bottom">
       <div class="content">
         <div class="logo-img"><img src="img/logo.png" alt=""></div>
-        <form action="" id="search">
-          <input class="text" type="text" placeholder="搜索...">
-          <input class="sub" type="submit" value="">
-        </form>
+        <div class="search-k">
+          <div class="module-k">
+            <!-- date-id中是传入的模块的参数 -->
+            <div class="module-c action" data-id="1" >新闻</div>
+            <div class="module-c" data-id="2">图片</div>
+            <div class="module-c" data-id="3">下载</div>
+            <div class="module-c" data-id="4">专题</div>
+          </div>
+          <form action="" id="search">
+            <input class="text" type="text" placeholder="搜索...">
+            <!-- value属性默认传入第一个模块的id -->
+            <input id="mod" type="hidden" value="1" name="" >
+            <input class="sub" type="submit" value="">
+          </form>
+        </div>
         <div class="ad"><img src="img/head-ad.png" alt=""></div>
       </div>
     </div>

@@ -127,4 +127,12 @@ $(function(){
     })
   }
   bannerBj();
+  // 搜索选择模块
+  $(".module-k .module-c").click(function(){
+    var ids = $(this).attr("data-id");
+    var index = $(this).index();
+    $(".module-k .module-c").removeClass("action")
+    .eq(index).addClass('action')
+    $("#mod").val(ids);
+  })
 })
