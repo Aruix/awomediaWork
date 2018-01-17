@@ -11,7 +11,7 @@
 			return;
 	  };
 	  */
-	  docEl.style.fontSize = 100 * (clientWidth / 1646) + 'px';
+	  docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
 	};
 
   if (!doc.addEventListener) return;

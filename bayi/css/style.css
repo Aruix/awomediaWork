@@ -1,0 +1,462 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+.line1{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.line2{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+a{
+	outline: none;
+	text-decoration: none;
+}
+*{
+	-webkit-overflow-scrolling: touch;
+}
+/* 首页幻灯 */
+#swiperIndex{
+  height: 3.5rem;
+}
+#swiperIndex .swiper-slide img,#swiperIndex2 .swiper-slide img{
+  width: 100%;
+  min-height: 100%;
+}
+/*首页菜单*/
+.nav{
+	margin-top: 0.3rem;
+	overflow: hidden;
+}
+.nav-k{
+	display: block;
+	float: left;
+	width: 33.3333%;
+	text-align: center;
+	margin-bottom: 0.18rem;
+}
+.nav-k .icon{
+	width: 0.76rem;
+	height: 0.76rem;
+	margin: 0 auto;
+}
+.icon img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nav-k .title{
+	margin-top: 0.04rem;
+	color: #000;
+	font-size: 0.2rem;
+}
+/*首页列表*/
+.index-list .list-title{
+	display: block;
+	height: 0.71rem;
+	line-height: 0.71rem;
+	padding-left: 0.84rem;
+	background: url(../img/title-icon.png) #d21019 no-repeat;
+	background-size: 0.41rem auto;
+	background-position: 0.29rem 0.18rem;
+	font-size: 0.26rem;
+	color: white;
+}
+.index-list .list-k{
+	display: block;
+	margin: 0.22rem 0.14rem 0.22rem 0.09rem;
+	position: relative;
+	overflow: hidden;
+}
+.index-list .list-k:before{
+	content: "";
+	display: block;
+	width: 200%;
+	height: 0.02rem;
+	background-color: #d3d3d3;
+	position: absolute;
+	bottom: 0;
+	left: 2.06rem;
+}
+.index-list .list-k .icon{
+	float: left;
+	margin-right: 0.19rem;
+	width: 2.41rem;
+	height: 1.57rem;
+}
+.index-list .list-k .title{
+	font-size: 0.2575rem;
+	color: #000;
+	padding-top: 0.38rem;
+}
+.index-list .list-k .time{
+	position: absolute;
+	top: 1.2rem;
+	right: 0;
+	color: #bbbbbb;
+	font-size: 0.18rem;
+}
+/*list1列表*/
+.index-list.list1{
+	margin-top: 0.24rem;
+}
+.index-list.list1 .list-k{
+	margin: 0 0.16rem 0.32rem 0.14rem;
+}
+.index-list.list1 .list-k .icon{
+	float: right;
+	width: 1.38rem;
+	height: 0.96rem;
+}
+.index-list.list1 .list-k .title{
+	padding-top: 0.02rem;
+	margin-left: 0.02rem;
+}
+.index-list.list1 .list-k .time{
+	top: 0.64rem;
+	left: 0.06rem;
+}
+.index-list.list1 .list-k:before{
+	content: "";
+	display: block;
+	width: 4.5rem;
+	border-top: 0.02rem solid #dcdcdc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+a.more{
+	display: block;
+	width: ;
+	background-color: #eaeaea;
+	text-align: center;
+	margin: 0.5rem 1.6rem;
+	font-size: 0.22rem;
+	color: #757575;
+	padding: 0.14rem 0.1rem;
+	border-radius: 0.04rem;
+}
+/*议事厅*/
+.ind1 .ind1-title1{
+	padding-top: 0.07rem;
+	overflow: hidden;
+}
+.ind1 .ind1-title1 .srcs{
+	float: left;
+	width: 3.18rem;
+	height: 2.02rem;
+}
+.ind1 .ind1-title1 .srcs:nth-of-type(2){
+	float: right;
+}
+.ind1 .ind1-nav{
+	margin-top: 0.62rem;
+}
+.ind1-nav a{
+	display: block;
+	margin: 0.16rem auto;
+	width: 4.08rem;
+	height: 1.06rem;
+	color: white;
+	font-size: 0.3rem;
+	background: url(../img/color-bg1.png) no-repeat;
+	background-size: 100%;
+	text-align: center;
+	text-indent: -1rem;
+	line-height: 1.06rem;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.ind1-nav a.ind1-nav-k2{
+	background-image: url(../img/color-bg2.png);
+}
+.ind1-nav a.ind1-nav-k3{
+	background-image: url(../img/color-bg3.png);
+}
+.ind1-nav a.ind1-nav-k4{
+	background-image: url(../img/color-bg4.png);
+}
+.ind1-nav a.ind1-nav-k5{
+	background-image: url(../img/color-bg5.png);
+}
+/*八一视窗*/
+.ind1 .ind1-title2{
+	height: 3.19rem;
+}
+#swiperIndex2{
+	height: 3.19rem;
+}
+/*风采录 党建进行时 访惠聚在行动*/
+.nav1{
+	display: table;
+	width: 100%;
+	height: 0.66rem;
+	text-align: center;
+}
+.nav1 .nav-srcs{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 0.3179rem;
+	color: #7a7a7a;
+	position: relative;
+}
+.nav1 .nav-srcs:before{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 0.28rem;
+	width: 0.02rem;
+	background-color: #c6c6c6;
+	right: 0;
+	top: 0.16rem;
+}
+.nav1 .nav-srcs:nth-last-of-type(1):before{
+	display: none;
+}
+/*幻灯*/
+.banner-n1{
+	height: 3.6rem;
+	position: relative;
+}
+.banner-n1 #bannerN{
+	height: 100%;
+}
+#bannerN .swiper-slide img{
+	height: 100%;
+}
+.banner-n1 .title{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(19,0,0,0.48);
+	height: 0.6rem;
+}
+.banner-n1 .title .text{
+	float: left;
+	color: white;
+	font-size: 0.26rem;
+	line-height: 0.6rem;
+	margin-left: 0.23rem;
+	width: 4.6rem;
+	display: none;
+}
+.banner-n1 .title .text:nth-of-type(1){
+	display: block;
+}
+/*列表*/
+.index-list.list2 .list-k{
+	margin-left: 0.14rem;
+	margin: 0.22rem 0.14rem 0.4rem 0.14rem;
+}
+.index-list.list2 .list-k .icon{
+	width: 2.02rem;
+	height: 1.25rem;
+}
+.index-list.list2 .list-k .title{
+	padding-top: 0.16rem;
+}
+.index-list.list2 .list-k .time{
+	top: auto;
+	bottom: 0.14rem;
+	left: 2.22rem;
+	font-size: 0.2054rem;
+}
+/*红色直通车*/
+.nav2{
+	background: #eaeaea;
+	height: 1.62rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-around;
+	text-align: center;
+	align-items:center
+}
+.nav2 .nav-srcs{
+	
+}
+.nav2 .nav-srcs .icon{
+	width: 0.75rem;
+	height: 0.75rem;
+	margin: 0 auto 0.02rem auto;
+}
+.nav2 .nav-srcs .title{
+	color: black;
+	font-size: 0.2rem;
+}
+.list3 .list-k{
+	display: block;
+	height: 1.6rem;
+	border-bottom: 0.01rem solid #d3d3d3;
+	padding: 0 0.15rem;
+}
+.list3 .icon{
+	float: left;
+	width: 1.37rem;
+	height: 0.97rem;
+	margin-right: 0.26rem;
+	margin-top: 0.23rem;
+}
+.list3 .title{
+	color: #000;
+	font-size: 0.2055rem;
+	padding-top: 0.26rem;
+}
+/*礼品兑换*/
+.gift .gift-k{
+	height: 2.06rem;
+	margin: 0.25rem 0.18rem 0.3rem 0.18rem;
+	background-color: #fafafa;
+	border: 0.01rem solid #dfdfdf;
+}
+.gift .gift-k .icon{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: left;
+	width: 2.98rem;
+	height: 100%;
+	margin-right: 0.35rem;
+	border: 0.01rem solid #fafafa;
+}
+.gift .gift-k .title{
+	font-size: 0.2423rem;
+	color: #000;
+	padding-top: 0.17rem;
+}
+.gift .gift-k .but{
+	display: block;
+	width: 2.19rem;
+	height: 0.52rem;
+	border: 0.01rem solid #c53d19;
+	float: left;
+	border-radius: 0.04rem;
+	margin-top: 0.82rem;
+}
+.gift .gift-k .but div{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 0.25rem;
+	color: white;
+	border: 0.01rem solid #f56b71;
+	background-color: #f13b45;
+	height: 100%;
+	text-align: center;
+	line-height: 0.52rem;
+}
+/*加分*/
+.jfs .jfs-top .icon-k{
+	width: 1.7rem;
+	margin: 0.7rem auto 0.56rem auto;
+}
+.jfs-top .icon-k .icon{
+	width: 1.7rem;
+	height: 1.7rem;
+	overflow: hidden;
+	border: 2rem;
+}
+.jfs-top .name{
+	color: #3d3d3d;
+	font-size: 0.3173rem;
+	text-align: center;
+	margin-top: 0.16rem;
+}
+.jfs .setting{
+	display: table;
+	width: 100%;
+}
+.setting>div{
+	display: table-cell;
+}
+.jfs .set-k{
+	display: block;
+	color: white;
+	margin: 0 auto;
+	font-size: 0.25rem;
+	width: 1.9rem;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	background: url(../img/jiafen1.png) no-repeat;
+	background-size: 100% 100%;
+	text-indent: 0.5rem;
+}
+.jfs .set-k.k2{
+	background-image: url(../img/jiafen2.png);
+}
+.jfs .set-k.k3{
+	background-image: url(../img/jiafen3.png);
+}
+.jfs-bottom{
+	margin-top: 0.5rem;
+}
+.jfs-bottom .jfs-title{
+	border-bottom: 0.07rem #ffd481 solid;
+}
+.jfs-bottom .jfs-title .title{
+	height: 0.55rem;
+	line-height: 0.55rem;
+	background-color: #f13a43;
+	font-size: 0.3033rem;
+	color: #fff;
+	text-align: center;
+}
+.jfs-table{
+	padding: 0.3rem 0.26rem;
+}
+.jfs-table .table-title{
+	overflow: hidden;
+	margin-bottom: 0.28rem;
+}
+.jfs-table .table-title span{
+	color: #000;
+	font-size: 0.25rem;
+	float: left;
+}
+.jfs-table .table-title span:nth-of-type(1){
+	margin-left: 0.46rem;
+}
+.jfs-table .table-title span:nth-of-type(2){
+	margin-left: 1.18rem;
+}
+.jfs-table .table-title span:nth-of-type(3){
+	margin-left: 1.32rem;
+}
+.jfs-table .table-cell{
+	height: 0.86rem;
+	background-color: #f4f4f4;
+	overflow: hidden;
+	margin-bottom: 0.16rem;
+}
+.jfs-table .table-cell span{
+	float: left;
+}
+.jfs-table .table-cell .order{
+	height: 100%;
+	width: 0.7rem;
+	margin-left: 0.36rem;
+	background: url(../img/jinp.png) no-repeat;
+	background-size: 100% 100%;
+}
+.jfs-table .table-cell .order.order2{
+	background-image: url(../img/yinp.png);
+}
+.jfs-table .table-cell .order.order3{
+	background-image: url(../img/tongp.png);
+}
+.jfs-table .table-cell .name{
+	margin-left: 0.5rem;
+	width: 2.42rem;
+	line-height: 0.86rem;
+	font-size: 0.3033rem;
+	color: #5f5f5f;
+}
+.jfs-table .table-cell .num{
+	line-height: 0.86rem;
+	font-size: 0.3033rem;
+	color: #5f5f5f;
+}
