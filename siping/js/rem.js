@@ -11,10 +11,11 @@
 			return;
 	  };
 	  */
-	  docEl.style.fontSize = 100 * (clientWidth / 1646) + 'px';
+		docEl.style.fontSize = 100 * (clientWidth / 1646) + 'px';
+		document.body.style.display = "block";
 	};
 
   if (!doc.addEventListener) return;
   win.addEventListener(resizeEvt, recalc, false);
-  doc.addEventListener('DOMContentLoaded', recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
