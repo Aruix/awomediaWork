@@ -133,7 +133,7 @@ a{
 }
 a.more{
 	display: block;
-	width: ;
+	/* width: ; */
 	background-color: #eaeaea;
 	text-align: center;
 	margin: 0.5rem 1.6rem;
@@ -314,6 +314,7 @@ a.more{
 	margin: 0.25rem 0.18rem 0.3rem 0.18rem;
 	background-color: #fafafa;
 	border: 0.01rem solid #dfdfdf;
+	position: relative;
 }
 .gift .gift-k .icon{
 	box-sizing: border-box;
@@ -334,9 +335,20 @@ a.more{
 	width: 2.19rem;
 	height: 0.52rem;
 	border: 0.01rem solid #c53d19;
-	float: left;
 	border-radius: 0.04rem;
-	margin-top: 0.82rem;
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.48rem;
+}
+.gift .gift-k .but2{
+	display: block;
+	width: 2.19rem;
+	height: 0.52rem;
+	border: 0.01rem solid #c53d19;
+	border-radius: 0.04rem;
+	position: absolute;
+	bottom: 0.1rem;
+	right: 0.1rem;
 }
 .gift .gift-k .but div{
 	box-sizing: border-box;
@@ -459,4 +471,67 @@ a.more{
 	line-height: 0.86rem;
 	font-size: 0.3033rem;
 	color: #5f5f5f;
+}
+/* 表单样式 */
+form .fk{
+	font-size: 0.3rem;
+	border-bottom: 1px solid #cfcfcf;
+	padding: 0.2rem 0.1rem;
+}
+form input{
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+}
+form label{
+	color: #2e2e2e;
+	margin-right: 0.12rem;
+}
+form input[type=text]{
+	border: none;
+	color: #7a7a7a;
+	font-size: 0.3rem;
+}
+form input[type=radio]{
+	width: 0.2rem;
+	height: 0.2rem;
+	border: 1px solid #7a7a7a;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0);
+}
+form input[type=radio]:checked{
+	background-color: #f13a43;
+}
+form select{
+	outline: none;
+	font-size: 0.3rem;
+	color: #7a7a7a;
+	border: none;
+}
+form input[type=submit]{
+	border: none;
+	width: 80%;
+	height: 0.6rem;
+	border-radius: 0.06rem;
+	background-color: #f13a43;
+	color: white;
+	font-size: 0.26rem;
+	display: block;
+	margin: 0 auto;
+}
+form .fk.sub{
+	border-bottom: none;
+}
+form textarea{
+	display: block;
+	height: 2rem;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 0.26rem;
+	color: #7a7a7a;
+	border-radius: 0.06rem;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
 }

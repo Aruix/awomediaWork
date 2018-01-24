@@ -1,0 +1,508 @@
+html,body{
+  margin: 0;
+  padding:0;
+  width: 100%;
+  font-size: 20px;
+  background-color: #f9f9f9;
+}
+a:link{
+  text-decoration: none;
+}
+.content{
+  display: block;
+  margin: auto;
+  width: 1200px;
+  width: 12rem;
+  height: 100%;
+}
+/* 首页幻灯设置 */
+.index-banner{
+  width: 100%;
+  height: 640px;
+  height: 6.4rem;
+  overflow: hidden;
+  position: relative;
+}
+#swiperIndex{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.index-banner .pagination{
+  position: absolute;
+  right: 22px;
+  right: 0.22rem;
+  width: 10px;
+  width: 0.1rem;
+  top: 0;
+  /* bottom: 0; */
+  margin:auto;
+  z-index: 1;
+}
+.index-banner .swiper-pagination-bullet{
+  display：block;
+  width: 100%;
+  height: 10px;
+  height: 0.1rem;
+  background-color: #9f938e;
+  cursor: pointer;
+}
+.index-banner .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #d94832;
+}
+.index-banner .content-k{
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  margin-left: -6rem;
+  z-index: 2;
+  height: 100%;
+  overflow: hidden;
+}
+.index-banner .banner-content{
+  float: right;
+  position: relative;
+  height: 100%;
+  width: 492px;
+  width: 4.92rem;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+}
+.index-banner .arrow-top,.index-banner .arrow-bottom{
+  width: 50px;
+  width: 0.5rem;
+  height: 20px;
+  height: 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 23px auto;
+  margin: 0.23rem auto;
+  cursor: pointer;
+}
+.index-banner .arrow-top{
+  background-image: url('../img/arrow-top.png');
+  top: 0;
+}
+.index-banner .arrow-bottom{
+  background-image: url('../img/arrow-bottom.png');
+  bottom: 0;
+}
+/* 首页幻灯文字内容 */
+.content-k .content{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.content-k.content .title,.content-k.content .text,.content-k.content .srcs{
+  margin: atuo 62px auto 50px;
+  margin: auto 0.62rem auto 0.5rem;
+  color: white;
+  text-align: justify;
+}
+.content-k.content .title{
+  font-size: 40px;
+  font-size: 0.4rem;
+  max-height: 110px;
+  max-height: 1.1rem;
+  overflow: hidden;
+  line-height: 59px;
+  line-height: 0.59rem;
+  margin-top: 96px;
+  margin-top: 0.96rem;
+}
+.index-banner .swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+.content-k.content .text{
+  font-size: 20px;
+  font-size: 0.2rem;
+  line-height: 30px;
+  line-height: 0.3rem;
+  max-height: 236px;
+  max-height: 2.36rem;
+  margin-top: 35px;
+  margin-top: 0.35rem;
+  margin-bottom: 17px;
+  margin-bottom: 0.17rem;
+  overflow: hidden;
+}
+.content-k.content .srcs{
+  padding:6px 8px;
+  padding: 0.06rem 0.08rem;
+  padding-right: 37px;
+  padding-right: 0.37rem;
+  border: 1px solid #a0a09f;
+  font-size: 18px;
+  font-size: 0.18rem;
+  background-image: url(../img/sanjiao.png);
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  background-position: 90% center;
+}
+/* 头部收藏关注下载 */
+.header-top{
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dddddd;
+  font-size: 14px;
+  font-size: 0.14rem;
+}
+ .header-top .content{
+  height: 40px;
+  height: 0.4rem;
+}
+.header-top .sc,.header-top .gz,.header-top .xz{
+  float: left;
+  color: #5b5c62;
+  margin-right: 24px;
+  margin-right: 0.24rem;
+  margin-top: 10px;
+  margin-top: 0.1rem;
+}
+.header-top .el,.header-top .dl,.header-top .zc{
+  float: right;
+  color: #5b5c62;
+  margin-top: 10px;
+  margin-top: 0.1rem;
+}
+.header-top .sc{
+  padding-left: 22px;
+  padding-left: 0.22rem;
+  background: url(../img/header-sc.png) no-repeat left center;
+  background-size: auto 80%;
+}
+.header-top .gz{
+  padding-left: 20px;
+  padding-left: 0.20rem;
+  background: url(../img/header-gz.png) no-repeat left center;
+  background-size: auto 80%;
+}
+.header-top .xz{
+  padding-left: 20px;
+  padding-left: 0.2rem;
+  background: url(../img/header-xz.png) no-repeat left center;
+  background-size: auto 80%;
+}
+.header-top .el{
+  margin-right: 34px;
+  margin-right: 0.34rem;
+}
+.header-top .dl{
+  padding-right: 13px;
+  padding-right: 0.13rem;
+  border-right: 1px solid #86868b;
+  padding-right: 13px;
+  margin-right: 0.13rem;
+  color: #d94832;
+}
+.header-top .zc{
+  margin-right: 28px;
+  margin-right: 0.28rem;
+}
+.header-bottom .content{
+  height: 136px;
+  height: 1.36rem;
+}
+.header-bottom .logo-img{
+  float: left;
+  width: 300px;
+  width: 3rem;
+  height: 60px;
+  height: 0.6rem;
+  margin-top: 36px;
+  margin-top: 0.36rem;
+}
+.logo-img img{
+  width: 100%;
+  height: 100%;
+}
+.header-bottom #search{
+  float: left;
+  position: relative;
+  width: 250px;
+  width: 2.5rem;
+  height: 34px;
+  height: 0.34rem;
+  margin: 46px auto auto 36px;
+  margin: 0.46rem auto auto 0.36rem;
+  border: 1px solid #afafaf;
+  overflow: hidden;
+}
+#search .text{
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 12px;
+  padding-left: 0.12rem;
+  outline: none;
+}
+#search .sub{
+  position: absolute;
+  height: 100%;
+  width: 34px;
+  width: 0.34rem;
+  top: 0;
+  right:0;
+  border: none;
+  background: #f9f9f9 url(../img/search.png) no-repeat left center;
+  background-size: auto 70%;
+}
+.header-bottom .ad{
+  margin-top: 16px;
+  margin-top: 0.16rem;
+  float: right;
+  width: 500px;
+  width: 5rem;
+  height: 100px;
+  height: 1rem;
+}
+.ad img{
+  width: 100%;
+  height: 100%;
+}
+/* 顶部导航 */
+.nav{
+  background-color: #db3820;
+}
+.nav .content{
+  font-size: 22px;
+  font-size: 0.22rem;
+  overflow: hidden;
+}
+.nav .kk{
+  height: 94px;
+  height: 0.94rem;
+  width: 1300px;
+  width: 1300rem;
+}
+.nav .link-k{
+  height: 100%;
+  width: 212px;
+  width: 2.12rem;
+  background: url(../img/nav-bg.png) no-repeat;
+  background-position: 172px center;
+  background-position: 1.72rem center;
+  background-size: auto 100%;
+  float: left;
+}
+.no-margin{
+  margin-left: 0!important;
+}
+.nav .link-k a{
+  display: block;
+  float: left;
+  color: white;
+  margin: 11px 48px 3px 0;
+  margin: 0.11rem 0.48rem 0.03rem 0;
+}
+.nav .link-k a:hover{
+  text-decoration: underline;
+}
+.content.ad{
+  margin: 34px auto 31px auto;
+  margin: 0.34rem auto 0.31rem auto;
+}
+.ad img{
+  width: 100%;
+  height: auto;
+}
+/* 数字报刊 */
+.paper{
+  height: 98px;
+  height: 0.98rem;
+  background-color: #f1f1f1;
+  margin-bottom: 33px;
+  margin-bottom: 0.33rem;
+}
+.paper .title{
+  width: 192px;
+  width: 1.92rem;
+  margin:23px 55px auto 56px;
+  margin:0.23rem 0.55rem auto 0.56rem;
+  display: block;
+  float: left;
+}
+.paper .paper-con{
+  display: block;
+  float: left;
+  width: 410px;
+  height:64px;
+  width: 4.1rem;
+  height:0.64rem;
+  text-align: center;
+  line-height: 64px;
+  line-height: 0.64rem;
+  background-color: #d2e3fb;
+  color: black;
+  font-size: 24px;
+  font-size: 0.26rem;
+  margin: 18px 33px auto auto;
+  margin: 0.18rem 0.33rem auto auto;
+}
+/* 返回顶部 */
+.retop{
+  display: none;
+  position: fixed;
+  right: 76px;
+  right: 0.76rem;
+  bottom: 100px;
+  bottom: 1rem;
+  z-index: 11111;
+  width: 60px;
+  width: 0.6rem;
+  cursor: pointer;
+}
+/* 列表1 */
+.content.list1{
+  overflow: hidden;
+  height: auto;
+}
+.list1 .list-left{
+  height: 500px;
+  height: 5rem;
+  width: 454px;
+  width: 4.54rem;
+  float: left;
+}
+/* 列表中点击切换 */
+.ownswip{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ownswip-title{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 34px;
+  margin-bottom: 0.34rem;
+}
+.ownswip-title .text{
+  width: 50%;
+  float: left;
+  cursor: pointer;
+}
+.ownswip-title .text img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ownswip .content{
+  width: 100%;
+  height: 436px;
+  height: 4.36rem;
+}
+.ownswip .content .content-t{
+  width: 100%;
+  display: none;
+}
+.ownswip .content .content-t.action{
+  display: block;
+}
+/* 列表内容样式 */
+.list1 .list-left .content-t .lists.title{
+  color: #d94832;
+  font-size: 24px;
+  font-size: 0.24rem;
+  padding-left: 0;
+  background:none;
+}
+.list1 .list-left .content-t .lists{
+  color: #2a2826;
+  display: block;
+  overflow: hidden;
+  text-align: justify;
+  height: 26px;
+  line-height: 26px;
+  height: 0.26rem;
+  line-height: 0.26rem;
+  font-size: 20px;
+  font-size: 0.2rem;
+  margin:24px 0;
+  margin: 0.24rem 0;
+  padding-left: 26px;
+  padding-left: 0.26rem;
+  background: url(../img/icon1.png) no-repeat left center;
+  /* background-size: */
+}
+.list1 .list-right{
+  float: right;
+  width: 712px;
+  height: 476px;
+  width: 7.12rem;
+  height: 4.76rem;
+}
+.list1 .list-banner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#swiperIndex2{
+  width: 100%;
+  height: 100%;
+}
+.swiperIndex2 img{
+  width: 100%;
+  height: 100%;
+}
+.list1 .list-banner .setting{
+  background: url(../img/banner-bg1.png) no-repeat bottom left;
+  background-size: 100% auto;
+  width: 100%;
+  height: 86px;
+  height: 0.86rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  overflow: hidden;
+}
+.list1 .list-banner .setting .pagination2{
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  right: 16px;
+  bottom: 0.22rem;
+  right: 0.16rem;
+}
+.list1 .list-banner .setting .title{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  text-align: center;
+  line-height: 86px;
+  line-height: 0.86rem;
+}
+.list1 .list-banner .setting .title-list{
+  display: none;
+  font-size: 22px;
+  font-size: 0.22rem;
+  color: white;
+}
+.list1 .swiper-pagination-bullet{
+  width: 13px;
+  height: 13px;
+  width: 0.13rem;
+  height: 0.13rem;
+  background-color: #acacac;
+  border-radius: 0;
+  margin-left: 6px;
+  margin-left: 0.06rem;
+}
+.list1 .list-banner .setting .title-list.active{
+  display: block;
+}
+.list1 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #d94832;
+}

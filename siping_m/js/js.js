@@ -1,36 +1,21 @@
 $(function(){
+	//移动端
+	$(".but-pull").click(function(){
+		$(this).parents('.content').toggleClass('ac');
+		if($(this).html()==="更多"){
+			$(this).html("收起")
+		}else{
+			$(this).html("更多")
+		}
+	})
+	//原来的
   function bannerIndex(){
-    var w = $("body").css('width'),
-        h = (parseInt(w)*0.389583)+'px';
-    $("#swiperIndex").css({
-      "height":h
-    });
-    $(".index-banner").css("height",h);
-    $(".content-k .content").eq(0).fadeIn(0);
     var mySwiper = $('#swiperIndex').swiper({
-      mode: 'vertical',
-      direction:"vertical",
-      effect:"fade",
-      autoplay : 3000,
       pagination : '.pagination',
       paginationClickable :true,
       onSlideChangeEnd:function(swiper){
         var index = swiper.activeIndex;
         $(".content-k .content").fadeOut().eq(index).fadeIn(100);
-      },
-      onFirstInit:function(swiper){
-        var pw = $(".index-banner .pagination")[0].offsetHeight;
-        $(".index-banner .pagination").css({
-          'height':pw,
-          "bottom":0
-        });
-      },
-      onInit:function(swiper){
-        var pw = $(".index-banner .pagination")[0].offsetHeight;
-        $(".index-banner .pagination").css({
-          'height':pw,
-          "bottom":0
-        });
       }
     });
     $(".arrow-top").click(function(){
@@ -87,40 +72,15 @@ $(function(){
   $(".seeq").click(function(){
     if($(this).html()=="查看全部"){
       $("#newCon").css({
-        "max-height":"none"
+        "height":"auto"
       })
       $(this).html("收起全部");
     }else{
       $("#newCon").css({
-        "max-height":"800px"
+        "height":"300px"
       })
       $(this).html("查看全部");
     }
-  })
-  //首页通知公告
-  function tzggBan(){
-    var list = $(".tzgg-list-k .tzgg-list");
-    var height = list.height();
-    if(list.length>5){
-      setInterval(function(){
-        $(".tzgg-ks").animate({
-            top:(-height)+"px"
-          },500,function(){
-            var list1 = $(".tzgg-list-k .tzgg-list").eq(0);
-            console.log(list1);
-            $(".tzgg-ks").append($(list1).clone());
-            $(list1).remove();
-            $(".tzgg-ks").css("top",0);
-          }
-        )
-      },5000)
-    }
-  }
-  tzggBan();
-  // 加入收藏
-  $(".header-top .sc").click(function(){
-    alert("请点击 Ctrl+D 收藏本页面");
-    return false;
   })
   // 图集
   function swiperPic(){
@@ -153,11 +113,6 @@ $(function(){
     })
   }
   bannerBj();
-  // 弹出二维码
-  $(".header-top .gz").click(function(){
-    $(this).children('.orwm').fadeToggle();
-    return false;
-  })
   // 搜索选择模块
   $(".module-k .module-c").click(function(){
     var ids = $(this).attr("data-id");

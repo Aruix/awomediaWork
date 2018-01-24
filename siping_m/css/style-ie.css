@@ -1,0 +1,94 @@
+html,body{
+  margin: 0;
+  padding:0;
+  width: 100%;
+  font-size: 20px;
+}
+.content{
+  margin: auto;
+  width: 1200px;
+  height: 100%;
+}
+/* 首页幻灯设置 */
+.index-banner{
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+  position: relative;
+}
+#swiperIndex{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.index-banner .pagination{
+  position: absolute;
+  right: 22px;
+  width: 10px;
+  top: 0;
+  /* bottom: 0; */
+  margin:auto;
+  z-index: 1;
+}
+.index-banner .swiper-pagination-bullet,.index-banner .swiper-pagination-switch{
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: #9f938e;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.index-banner .swiper-pagination-bullet.swiper-pagination-bullet-active,.swiper-pagination-switch.swiper-active-switch{
+  background-color: #d94832;
+}
+.index-banner .content-k{
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 2;
+}
+.index-banner .banner-content{
+  float: right;
+  position: relative;
+  height: 100%;
+  width: 492px;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.index-banner .arrow-top,.index-banner .arrow-bottom{
+  width: 50px;
+  width: 0.5rem;
+  height: 20px;
+  height: 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 23px auto;
+  margin: 0.23rem auto;
+}
+.index-banner .arrow-top{
+  background-image: url('../img/arrow-top.png');
+  top: 0;
+}
+.index-banner .arrow-bottom{
+  background-image: url('../img/arrow-bottom.png');
+  bottom: 0;
+}
+/* 测试用的 */
+.p1{
+  background-color: blue;
+}
+.p2{
+  background-color: green;
+}
+.p3{
+  background-color: orange;
+}
+.p4{
+  background-color: yellow;
+}
