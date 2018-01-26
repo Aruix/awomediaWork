@@ -42,7 +42,7 @@ a:link{
   z-index: 1;
 }
 .index-banner .swiper-pagination-bullet{
-  display:block;
+  /* display:block; */
   width: 0.13rem;
   height: 0.13rem;
   background-color: #afb0b2;
@@ -89,6 +89,19 @@ a:link{
 .index-banner .arrow-bottom{
   background-image: url('../img/arrow-bottom.png');
   bottom: 0;
+}
+.header-bottom .top-nav{
+  float: left;
+  color: #909090;
+  font-size: 0.28rem;
+  margin-top: 0.4rem;
+  margin-left: 0.3rem;
+}
+.top-nav .fu{
+  color: #e73223;
+}
+.list-header{
+  border-bottom: 1px solid #d7d7d7;
 }
 /* 首页幻灯文字内容 */
 .content-k .content{
@@ -792,6 +805,7 @@ a:link{
   padding: 0.38rem 0.35rem 0.24rem 0.35rem;
   position: relative;
   border-bottom: 0.02rem solid #f0f0f0;
+  min-height: 1.4rem;
 }
 .lm-list-k2 img{
   width: 2.12rem;
@@ -1060,8 +1074,7 @@ a:link{
   float: left;
 }
 .ll .title,.lr .title{
-  font-size:17px;
-  font-size: 0.17rem;
+  font-size: 0.3rem;
 }
 /* 页脚 */
 .footer{
@@ -1132,8 +1145,7 @@ a:link{
 /* 频道列表页 */
 .content.list-con{
   overflow: hidden;
-  margin-top: 60px;
-  margin-top: 0.6rem;
+  margin-top: 0.56rem;
 }
 .page-list{
   background-color: #fbfbfb;
@@ -1183,8 +1195,6 @@ a:link{
   line-height: 0.6rem;
 }
 /* 列表中的列表样式 */
-.list-con .list2{
-}
 .list-con .list2 .lm-list1{
   height: 162px;
   height: 1.62rem;
@@ -1330,19 +1340,19 @@ a:link{
 /* 详情页新闻内容 */
 .list-con .list-left .news{
   overflow: hidden;
+  padding: 0 0.36rem;
 }
 .list-con .list-left .news .title{
-  color: #0e0001;
-  font-size: 32px;
-  font-size: 0.32rem;
+  color: #2f2f2f;
+  font-size: 0.46rem;
+  text-align: justify;
 }
 .list-con .list-left .news .desc{
   margin: 28px 0 18px 0;
   margin: 0.28rem 0 0.18rem 0;
   overflow: hidden;
   color: #74686b;
-  font-size: 16px;
-  font-size: 0.16rem;
+  font-size: 0.26rem;
 }
 .news .desc .date,.news .desc .numa{
   float: left;
@@ -1356,7 +1366,6 @@ a:link{
   float: right;
 }
 .list-con .list-left .news .cons{
-  height: 300px;
   overflow: hidden;
 }
 .list-con .list-left .news .cons .player{
@@ -1581,14 +1590,11 @@ form textarea{
 }
 .pic-con{
   background-color: white;
-  border: 1px solid #f1f1f1;
 }
 .pic-con .pic-title{
-  padding: 30px 28px 24px 28px;
   padding: 0.3rem 0.28rem 0.24rem 0.28rem;
-  color: black;
-  font-size: 26px;
-  font-size: 0.26rem;
+  color: #2f2f2f;
+  font-size: 0.46rem;
   text-align: justify;
 }
 .pic-con .desc{
@@ -1599,14 +1605,19 @@ form textarea{
 .pic-con .desc .date{
   float: left;
   color: #9c9fa1;
-  font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 0.26rem;
 }
 .pic-con .desc .screen,.pic-con .desc .sett{
   float: right;
   color: #5b5b5b;
   font-size: 14px;
   font-size: 0.14rem;
+}
+.pic-desc{
+  font-size: 0.34rem;
+  color: #323232;
+  padding: 0.37rem 0.35rem;
+  text-align: justify;
 }
 .pic-con .desc .screen{
   padding-left: 50px;
@@ -1624,14 +1635,11 @@ form textarea{
   height: 720px;
   width: 10.8rem;
   height: 7.2rem;
-  margin: 24px auto;
+  margin: 0.25rem auto;
 }
 #swiperPic{
   width: 100%;
   height: 100%;
-}
-#swiperPic .swiper-slide{
-  /* width: 100%!important; */
 }
 .pic-banner #swiperPic .swiper-slide img{
   width: 100%;
@@ -1649,12 +1657,10 @@ form textarea{
   margin-left: 32px;
   margin-left: 0.32rem;
   color: #909197;
-  font-size: 16px;
-  font-size: 0.16rem;
+  font-size: 0.30rem;
 }
 .banner-desc .num .zn{
-  font-size: 23px;
-  font-size: 0.23rem;
+  font-size: 0.34rem;
   color: #931014;
 }
 .pic-con .banner-desc .title{
@@ -1666,6 +1672,8 @@ form textarea{
 }
 .banner-desc .title .title-list{
   display: none;
+  font-size: 0.3rem;
+  color: #626262;
 }
 .banner-desc .title .title-list.action{
   display: block;
