@@ -481,8 +481,8 @@ a:link{
   line-height: 0.26rem;
   font-size: 20px;
   font-size: 0.2rem;
-  margin:24px 0;
-  margin: 0.24rem 0;
+  margin:21.8px 0;
+  margin: 0.218rem 0;
   padding-left: 26px;
   padding-left: 0.26rem;
   background: url(../img/icon1.png) no-repeat left center;
@@ -588,6 +588,9 @@ a:link{
   border: 1px solid #d94832;
   margin-top: 14px;
   margin-top: 0.14rem;
+  position: relative;
+  top: -16px;
+  top: -0.16rem;
 }
 .tzgg .title{
   position: relative;
@@ -770,8 +773,8 @@ a:link{
 }
 .lm-list .lm-list-k3{
   display: block;
-  padding: 0 0 18px 0;
-  padding: 0 0 0.18rem 0;
+  padding: 0 0 15px 0;
+  padding: 0 0 0.15rem 0;
   margin-bottom: 17px;
   margin-bottom: 0.17rem;
   border-bottom: 1px #cecece dashed;
