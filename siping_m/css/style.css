@@ -1249,7 +1249,8 @@ a:link{
 }
 .pages{
   text-align: center;
-  margin-top: 0.38rem;
+  padding-top: 0.38rem;
+  clear: both;
 }
 .pages .pages-li{
   display: inline-block;
