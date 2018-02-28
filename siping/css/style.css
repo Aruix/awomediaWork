@@ -4,6 +4,7 @@ html,body{
   width: 100%;
   font-size: 20px;
   background-color: #f9f9f9;
+  font-family: Microsoft Yahei, STHeiti Light, SimSun, Arial, Helvetica, sans-serif;
 }
 body{
   display: none;
@@ -29,6 +30,8 @@ a:link{
   height: 6.4rem;
   overflow: hidden;
   position: relative;
+  margin-bottom: 30px;
+  margin-bottom: 0.3rem;
 }
 #swiperIndex{
   width: 100%;
@@ -299,6 +302,40 @@ a:link{
   width: 100%;
   height: 100%;
 }
+.header-bottom .ads1{
+  width: 380px;
+  height: 92px;
+  width: 3.8rem;
+  height: 0.92rem;
+  float: right;
+  margin-top: 20px;
+  margin-top: 0.2rem;
+  background: #f1f1f1 url(../img/paper-ti.png) no-repeat;
+  background-size: 100px;
+  background-size: 1rem;
+  background-position: 0.25rem center
+}
+.ads1 .pa1,.ads1 .pa2{
+  width: 208px;
+  height: 32px;
+  width: 2.08rem;
+  height: 0.32rem;
+  display: block;
+  margin-left: 150px;
+  margin-left: 1.5rem;
+  color: white;
+  font-size: 14px;
+  font-size: 0.14rem;
+  line-height: 32px;
+  margin-top: 9px;
+  margin-top: 0.09rem;
+  line-height: 0.32rem;
+  text-align: center;
+  background-color: #db3820;
+}
+.ads1 .pa2{
+  background-color: #ef8733!important;
+}
 /* 顶部导航 */
 .nav{
   background-color: #db3820;
@@ -338,8 +375,8 @@ a:link{
   text-decoration: underline;
 }
 .content.ad{
-  margin: 34px auto 31px auto;
-  margin: 0.34rem auto 0.31rem auto;
+  margin: 0 auto 31px auto;
+  margin: 0 auto 0.31rem auto;
 }
 .ad img{
   width: 100%;
@@ -481,8 +518,8 @@ a:link{
   line-height: 0.26rem;
   font-size: 20px;
   font-size: 0.2rem;
-  margin:21.8px 0;
-  margin: 0.218rem 0;
+  margin:16px 0;
+  margin: 0.16rem 0;
   padding-left: 26px;
   padding-left: 0.26rem;
   background: url(../img/icon1.png) no-repeat left center;
@@ -635,8 +672,8 @@ a:link{
   width: 100%;
   height: 276px;
   height: 2.76rem;
-  margin-top: 28px;
-  margin-top: 0.28rem;
+  margin-top: 4px;
+  margin-top: 0.04rem;
   display: block;
 }
 .list2 .ads img{
@@ -662,8 +699,8 @@ a:link{
 .lm-list .titlex{
   display: block;
   width: 100%;
-  margin-bottom: 17px;
-  margin-bottom: 0.17rem;
+  margin-bottom: 16px;
+  margin-bottom: 0.16rem;
   border-top: 2px solid #dfdfdf;
 }
 .lm-list .titlex a{
@@ -773,10 +810,10 @@ a:link{
 }
 .lm-list .lm-list-k3{
   display: block;
-  padding: 0 0 15px 0;
-  padding: 0 0 0.15rem 0;
-  margin-bottom: 17px;
-  margin-bottom: 0.17rem;
+  padding: 0 0 12px 0;
+  padding: 0 0 0.12rem 0;
+  margin-bottom: 13px;
+  margin-bottom: 0.13rem;
   border-bottom: 1px #cecece dashed;
 }
 .lm-list .lm-list-k3 .title{
@@ -786,8 +823,8 @@ a:link{
   font-size: 19px;
   font-size: 0.19rem;
   color: black;
-  margin-bottom: 16px;
-  margin-bottom: 0.16rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.10rem;
 }
 .lm-list .lm-list-k3 .text{
   font-size: 17px;
@@ -810,8 +847,8 @@ a:link{
 .list3 .lm-list{
   width: 384px;
   width: 3.84rem;
-  height: 200px;
-  height: 2rem;
+  height: 176px;
+  height: 1.76rem;
   float: left;
   overflow: hidden;
 }
@@ -835,8 +872,8 @@ a:link{
   line-height: 0.22rem;
   overflow: hidden;
   color: black;
-  margin-bottom: 26px;
-  margin-bottom: 0.26rem;
+  margin-bottom: 18px;
+  margin-bottom: 0.18rem;
   overflow: hidden;
 }
 .list3 .lm-list .lm-list-k2{
@@ -861,8 +898,8 @@ a:link{
   line-height: 28px;
   line-height: 0.28rem;
   margin-bottom: 0;
-  height: 82px;
-  height: 0.82rem;
+  height: 60px;
+  height: 0.6rem;
 }
 .list3 .list-right{
   float: right;
@@ -901,7 +938,7 @@ a:link{
 }
 .list3 .list-right .lm-list-k2{
   display: block;
-  border-bottom: 1px dashed #e1e1e1;
+  /* border-bottom: 1px dashed #e1e1e1; */
   overflow: hidden;
   padding-bottom: 9px;
   padding-bottom: 0.09rem;
@@ -929,8 +966,7 @@ a:link{
   overflow: hidden;
 }
 .list3 .ownswip .content{
-  height: 352px;
-  height: 3.52rem;
+  height: auto;
 }
 .list4 .k{
   width: 1300px;
@@ -942,8 +978,8 @@ a:link{
   width: 3.89rem;
   margin-right: 17px;
   margin-right: 0.17rem;
-  margin-bottom: 32px;
-  margin-bottom: 0.32rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.1rem;
 }
 .list4 .lm-list-k1{
   margin-bottom: 17px;
@@ -968,8 +1004,8 @@ a:link{
 .list5 .titlex{
   display: block;
   width: 100%;
-  margin-bottom: 22px;
-  margin-bottom: 0.22rem;
+  margin-bottom: 16px;
+  margin-bottom: 0.16rem;
   border-top: 2px solid #dfdfdf;
   text-align: center;
 }
@@ -1057,38 +1093,27 @@ a:link{
 }
 /* 页脚 */
 .footer{
-  margin-top: 106px;
-  margin-top: 1.06rem;
+  margin-top: 40px;
+  margin-top: 0.4rem;
+  padding-bottom: 36px;
+  padding-bottom: 0.36rem;
 }
 .footer1{
-  height: 48px;
-  height: 0.48rem;
-  background-color: #f3f3f3;
-  overflow: hidden;
-  padding-right: 25px;
-  padding-right: 0.25rem;
-}
-.footer1 a{
-  display: block;
-  margin-top: 14px;
-  margin-top: 0.14rem;
-  color: black;
+  height: 42px;
+  height: 0.42rem;
+  background-color: #df3c23;
+  color: white;
   font-size: 16px;
   font-size: 0.16rem;
-}
-.footer1 .ll{
-  float: left;
-  margin-left: 37px;
-  margin-left: 0.37rem
+  text-align: center;
+  line-height: 42px;
+  line-height: 0.42rem;
 }
 .footer1 .lr{
-  float: right;
-  padding-left: 18px;
-  margin-left: 15px;
-  padding-left: 0.18rem;
-  margin-left: 0.15rem;
-  background: url(../img/icon3s.png) no-repeat left center;
-  background-size: auto 82%;
+  padding: 0 13px;
+  padding: 0 0.13rem;
+  color: white;
+  border-right: 2px solid #fff
 }
 .footer2{
   overflow: hidden;
@@ -1113,6 +1138,24 @@ a:link{
   font-size: 16px;
   font-size: 0.16rem;
 }
+.footer .srcs{
+  background-color: #f2f2f2;
+  padding: 14px 0;
+  padding: 0.14rem 0;
+  font-size: 17px;
+  font-size: 0.17rem;
+}
+.footer .srcs .title{
+  float: left;
+  margin-right: 34px;
+  margin-right: 0.34rem;
+  color: #df3c23;
+}
+.footer .srcs a{
+  margin-right: 34px;
+  margin-right: 0.34rem;
+  color: #7d7d7d;
+}
 .footer p.mes{
   text-align: center;
   font-size: 16px;
@@ -1126,7 +1169,46 @@ a:link{
   display: block;
   width: 62px;
   width: 0.62rem;
-  margin: 16px auto
+  margin: 16px auto;
+}
+.footer3{
+  font-size: 14px;
+  font-size: 0.14rem;
+  margin-top: 26px;
+  margin-top: 0.26rem;
+}
+.footer3 .icon,.footer3 .name{
+  float: left;
+}
+.footer3 .icon{
+  width: 266px;
+  width: 2.66rem;
+}
+.footer3 .name{
+  margin: 6px 0 0 28px;
+  margin: 0.06rem 0 0 0.28rem;
+}
+.footer3 .code{
+  float: right;
+}
+.footer3 .code-k{
+  float: left;
+  width: 70px;
+  width: 0.7rem;
+  text-align: center;
+  margin-left: 36px;
+  margin-left: 0.36rem;
+}
+.footer3 .code-k img{
+  width: 100%;
+}
+.footer3 .phone{
+  clear: left;
+  position: relative;
+  left: 77px;
+  top: 20px;
+  left: 0.77rem;
+  top: -0.2rem;
 }
 /* 频道列表页 */
 .content.list-con{
@@ -1331,9 +1413,10 @@ a:link{
   overflow: hidden;
 }
 .list-con .list-left .news .title{
-  color: #0e0001;
-  font-size: 32px;
-  font-size: 0.32rem;
+  color: #4d4f53;
+  font-size: 40px;
+  font-size: 0.4rem;
+  font-weight: bold;
 }
 .list-con .list-left .news .desc{
   margin: 28px 0 18px 0;
