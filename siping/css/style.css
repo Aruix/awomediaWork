@@ -524,6 +524,8 @@ a:link{
   padding-left: 0.26rem;
   background: url(../img/icon1.png) no-repeat left center;
   /* background-size: */
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .list1 .list-right{
   float: right;
@@ -825,6 +827,8 @@ a:link{
   color: black;
   margin-bottom: 10px;
   margin-bottom: 0.10rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .lm-list .lm-list-k3 .text{
   font-size: 17px;
@@ -874,7 +878,8 @@ a:link{
   color: black;
   margin-bottom: 18px;
   margin-bottom: 0.18rem;
-  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .list3 .lm-list .lm-list-k2{
   height: auto;
@@ -890,6 +895,8 @@ a:link{
   margin-bottom: 13px;
   margin-bottom: 0.13rem;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .list3 .lm-list .lm-list-k2 .text{
   font-size: 19px;
@@ -991,6 +998,7 @@ a:link{
   border-top: 1px dashed #b8b8b8;
   margin: 0;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .list4{
   overflow: hidden;
@@ -1440,6 +1448,15 @@ a:link{
 .list-con .list-left .news .cons{
   max-height: 800px;
   overflow: hidden;
+}
+.list-con .list-left .news .cons{
+  color: #4d4f53;
+  line-height: 0.385rem;
+  font-size: 0.212rem;
+  letter-spacing: 1px;
+}
+.list-con .list-left .news .cons p{
+  margin: 0.212rem 0;
 }
 .list-con .list-left .news .cons .player{
   width: 700px;
