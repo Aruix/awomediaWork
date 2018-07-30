@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>电子书</title>
+		<link rel="stylesheet" type="text/css" href="css/turn/jquery.ui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/turn/style_m.css"/>
+	</head>
+	<body>
+		<style type="text/css">
+			.page-wrapper{
+				background-color: white;
+			}
+			.page{
+				background-color: rgba(255,255,255,.9);
+				background-size: 100% 100%;
+			}
+			.bookpic{
+				display: none;
+			}
+		</style>
+		<div class="full-k">
+		<div class="prev" style="display: none;" title="上一张"></div>
+		<div class="next" style="display: none;" title="下一张"></div>
+		<div class="setting" style="display: none;">
+			<div class="setting-k">
+				<div class="seticon play"></div>
+				<!--<div class="seticon screen"></div>-->
+				<div class="seticon ones"></div>
+				<div class="seticon num">
+					<input type="text" class="now" value="1" />/<span class="zong"></span>
+				</div>
+				<div class="seticon togo"></div>
+				<div class="seticon lsats"></div>
+				<!--<div class="seticon voice"></div>-->
+				<a class="seticon down" href="" target="_blank"></a>
+			</div>
+		</div>
+		<div class="book">
+			<div id="flipbook">
+				<div class="imgk" style="background-image: url(img/turn/1_.jpg);">
+					<img class="bookpic" data-url="img/turn/1_.jpg" src="img/turn/1_.jpg"/>
+				</div>
+				<div class="imgk" style="background-image: url(img/turn/2.jpg);">
+					<img class="bookpic" data-url="img/turn/2.jpg" src=""/>
+				</div>
+				<div class="imgk own-size">
+					<img class="bookpic" data-url="img/turn/3_.jpg" src=""/>
+				</div>
+				<div class="imgk own-size">
+					<img class="bookpic" data-url="img/turn/4_.jpg" src=""/>
+				</div>
+				<div class="imgk own-size">
+					<img class="bookpic" data-url="img/turn/3_.jpg" src=""/>
+				</div>
+				<div class="imgk own-size">
+					<img class="bookpic" data-url="img/turn/4_.jpg" src=""/>
+				</div>
+				<div class="imgk own-size">
+					<img class="bookpic" data-url="img/turn/3_.jpg" src=""/>
+				</div>
+				<div class="imgk own-size">
+					<img class="bookpic" data-url="img/turn/4_.jpg" src=""/>
+				</div>
+				<div class="p_la imgk">
+					<img class="bookpic" data-url="img/turn/6.jpg" src=""/>
+				</div>
+				<div class="imgk">
+					<img class="bookpic" data-url="img/turn/6_.jpg" src="img/turn/6_.jpg"/>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/turn/turn.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/turn/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			var picarr = ["img/turn/1_.jpg","img/turn/2.jpg","img/turn/3_.jpg","img/turn/4_.jpg","img/turn/3_.jpg","img/turn/4_.jpg","img/turn/3_.jpg","img/turn/4_.jpg","img/turn/6.jpg","img/turn/6_.jpg"];//
+		</script>
+		<script src="js/turn/js_m.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

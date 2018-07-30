@@ -1,0 +1,363 @@
+html,body{
+	position: relative;
+	z-index: -11111111111;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background: url(../../img/turn/bg.jpg) 100% 100%;
+}
+.book{
+	position:fixed;
+	top: 50%;
+	left: 50%;
+}
+/*去掉首页翻书时的阴影*/
+.book .page-wrapper{
+	-webkit-perspective:2000px;
+	-moz-perspective: 2000px;
+	-ms-perspective: 2000px;
+	perspective: 2000px;
+}
+#flipbook{
+	width: 100%;
+	height: 100%;
+}
+#flipbook .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 10px #999;
+	-moz-box-shadow:0 0 10px #999;
+	-ms-box-shadow:0 0 10px #999;
+	-o-box-shadow:0 0 10px #999;
+	box-shadow:0 0 10px #999;
+}
+#flipbook .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+.imgk {
+	background-color: white;
+}
+#flipbook .imgk img{
+	width: 100%;
+	height: 100%;
+}
+#flipbook .p1 .bookpic{
+	display: block;
+}
+#flipbook .hard .bookpic{
+	display: block;
+}
+#flipbook .imgk{
+	background-image: url(../../img/turn/loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#flipbook .even:after,#flipbook .odd:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+#flipbook .even:after{
+	/*background:-webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0,0,0,0))), color-stop(1, rgba(0,0,0,.2)));
+	background-image:-webkit-linear-gradient(left, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:-moz-linear-gradient(left, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:-ms-linear-gradient(left, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:-o-linear-gradient(left, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:linear-gradient(left, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);*/
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0.8, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,.2)));
+}
+
+#flipbook .odd:after{
+	/*background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0,0,0,0))), color-stop(1, rgba(0,0,0,.2)));
+	background-image:-webkit-linear-gradient(right, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:-moz-linear-gradient(right, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:-ms-linear-gradient(right, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:-o-linear-gradient(right, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);
+	background-image:linear-gradient(right, rgba(0,0,0,0)) 95%, rgba(0,0,0,.2) 100%);*/
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0.8, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,.1)));
+}
+.p_la,.p2{
+	background-color: rgb(202, 202, 202);
+}
+.p2 span,.p_la span{
+	background-color: rgb(97, 98, 97);
+	height: 100%;
+	width: 15px;
+	position: absolute;
+}
+.p2 span{
+	right: 0;
+	top: 0;
+}
+.p_la span{
+	left: 0;
+	top: 0;
+}
+.fm{
+	background: url(http://www.360youtu.com/ebookImg/cover/6.png) #FFFFFF;
+	position: absolute;
+	top: 10px;
+}
+.p2 .fm{
+	right: 0;
+}
+.p_la .fm{
+	left: 0;
+}
+/*边缘阴影*/
+.hard_left_border_cover{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.2%;
+    height: 100%;
+    background-image: linear-gradient(left, rgba(20,20,20,0.5), rgba(240,240,200,0));
+    background-image: -o-linear-gradient(left, rgba(20,20,20,0.5), rgba(240,240,200,0));
+    background-image: -moz-linear-gradient(left, rgba(20,20,20,0.5), rgba(240,240,200,0));
+    background-image: -webkit-linear-gradient(left, rgba(20,20,20,0.5), rgba(240,240,200,0));
+    background-image: -ms-linear-gradient(left, rgba(20,20,20,0.5), rgba(240,240,200,0));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#77151515', EndColorStr='#00DCDCB4');
+}
+.hard_top_border{
+	position: absolute;
+    left: 0;
+    right:0px;
+    top: 0;
+    height: 3px;
+    background-image: linear-gradient(top, rgba(240,240,200,0.6), rgba(240,240,200,0));
+    background-image: -o-linear-gradient(top, rgba(240,240,200,0.6), rgba(240,240,200,0));
+    background-image: -moz-linear-gradient(top, rgba(240,240,200,0.6), rgba(240,240,200,0));
+    background-image: -webkit-linear-gradient(top, rgba(240,240,200,0.6), rgba(240,240,200,0));
+    background-image: -ms-linear-gradient(top, rgba(240,240,200,0.6), rgba(240,240,200,0));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#CCF0F0C8', EndColorStr='#00F0F0C8');
+}
+.hard_bottom_border{
+	position: absolute;
+    left: 1px;
+    right:1px;
+    top: auto;
+    bottom: 0;
+    height: 3px;
+    border-radius:0 0 0 1px;
+    background-image: linear-gradient(bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00F0F0C8', EndColorStr='#66C8C896');
+}
+.hard_right_border_cover{
+	position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom:0;
+    width: 3px;
+    background-image: linear-gradient(right, rgba(0,0,0,0.25), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(right, rgba(0,0,0,0.25), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(right, rgba(0,0,0,0.25), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0.25), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(right, rgba(0,0,0,0.25), rgba(0,0,0,0));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#00F0F0C8', EndColorStr='#77C8C896');	
+}
+.hard_flod{
+    position: absolute;
+    left: 2.5%;
+    top: 0px;
+    width: 1.5%;
+    height: 100%;
+    background-image: linear-gradient(left, rgba(40,40,20,0) 0%, rgba(40,40,20,0.4) 35%, rgba(40,40,20,0) 100%);
+    background-image: -o-linear-gradient(left, rgba(40,40,20,0) 0%, rgba(40,40,20,0.4) 35%, rgba(40,40,20,0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(40,40,20,0) 0%, rgba(40,40,20,0.4) 35%, rgba(40,40,20,0) 100%);
+    background-image: -webkit-linear-gradient(left, rgba(40,40,20,0) 0%, rgba(40,40,20,0.4) 35%, rgba(40,40,20,0) 100%);
+    background-image: -ms-linear-gradient(left, rgba(40,40,20,0) 0%, rgba(40,40,20,0.4) 35%, rgba(40,40,20,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#77282815', EndColorStr='#00282815');
+}
+/*边缘阴影结束*/
+/*按钮样式*/
+.next,.prev{
+	cursor: pointer;
+	z-index: 1111;
+	position: fixed;
+	background-color: #ccc;
+	width: 72px;
+	height: 72px;
+	top: 50%;
+	margin-top: -36px;
+	border-radius: 73px;
+}
+.next{
+	right: -36px;
+	background-image: url(../../img/turn/right-2.svg);
+	background-position: -33px center;
+}
+.prev{
+	left: -36px;
+	background-image: url(../../img/turn/left-2.svg);
+	background-position: -8px center;
+}
+.setting{
+	background-color: #eee;
+	width: 100%;
+	height: 36px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 11111;
+}
+.setting-k{
+	height: 100%;
+	font-size: 0;
+}
+.setting-k .seticon{
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 26px;
+	height: 26px;
+	margin: 5px 10px 0 10px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+.setting-k .seticon.num{
+	width: auto;
+	font-size: 12px;
+	line-height: 26px;
+}
+.setting-k .seticon.prevpage{
+	background-image: url(../../img/turn/pre0rnext-page.svg);
+	transform: rotate(180deg);
+	background-size: 50px auto;
+}
+.setting-k .seticon.voice{
+	background-image: url(../../img/turn/audio_open.svg);
+	background-size: 40px auto;
+}
+.setting-k .seticon.nextpage{
+	background-image: url(../../img/turn/pre0rnext-page.svg);
+	background-size: 50px auto;
+}
+.setting-k .seticon.ones{
+	background-image: url(../../img/turn/firstorlast-page.svg);
+	transform:rotate(180deg);
+	background-size: 50px auto;
+}
+.setting-k .seticon.lsats{
+	background-image: url(../../img/turn/firstorlast-page.svg);
+	background-size: 50px auto;
+}
+.seticon.menu{
+	background-image: url(../../img/turn/contents.svg);
+	background-size: 18px 18px;
+}
+.seticon.view{
+	background-image: url(../../img/turn/theme_view.svg);
+	background-size: 50px 50px;;
+}
+.seticon.screen{
+	background-image: url(../../img/turn/full-screen.svg);
+	background-size: 46px 46px;
+}
+.seticon.screen.exit{
+	background-image: url(../../img/turn/exit-full-screen.svg);
+}
+.seticon.play{
+	background-image: url(../../img/turn/play.svg);
+	background-size: 32px 32px;
+}
+.seticon.togo{
+	background-image: url(../../img/turn/togo.png);
+	background-size: 16px auto;
+}
+.seticon.down{
+	background-image: url(../../img/turn/pdf.svg);
+	background-size: 18px 18px;
+}
+/*目录弹出样式*/
+.menu{
+	position: relative;
+}
+.menu-src{
+	position: absolute;
+	min-width: 300px;
+	top: 39px;
+	left: -20px;
+	display: none;
+}
+.menu-src .bg{
+	position: fixed;
+	width: 2000px;
+	height: 2000px;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	cursor: default;
+}
+.menu-src .srcs{
+	padding: 10px 10px;
+	color: #000;
+	background-color: white;
+	font-size: 14px;
+	text-align: left;
+	white-space: nowrap;
+	cursor: pointer;
+	position: relative;
+	z-index: 11;
+}
+/*图集*/
+.pics{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1111111;
+	display: none;
+	background-color: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+}
+.pic-k{
+	width: 90%;
+	height: 80%;
+	margin: 50px auto 0 auto;
+}
+.pic-k img{
+	display: block;
+	float: left;
+	width: 10%;
+	margin: 10px 1%;
+	cursor: pointer;
+}
+.now {
+	border: none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+	font-size: 12px;
+	text-align: right;
+	width: 20px;
+	outline: none;
+}
+.zong{
+	display: inline-block;
+	width: 20px;
+	text-align: left;
+}
+.bookpic{
+	display: none;
+}

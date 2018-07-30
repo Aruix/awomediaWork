@@ -1,0 +1,202 @@
+html,body{
+	position: relative;
+	z-index: -11111111111;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background: url(../../img/turn/bg.jpg) 100% 100%;
+}
+.book{
+	position:fixed;
+	top: 50%;
+	left: 50%;
+}
+.imgk{
+	background-color: white;
+	background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFF;
+} 
+.imgk img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/*按钮样式*/
+.next,.prev{
+	cursor: pointer;
+	z-index: 1111;
+	position: fixed;
+	background-color: #ccc;
+	width: 72px;
+	height: 72px;
+	top: 50%;
+	margin-top: -36px;
+	border-radius: 73px;
+}
+.next{
+	right: -36px;
+	background-image: url(../../img/turn/right-2.svg);
+	background-position: -33px center;
+}
+.prev{
+	left: -36px;
+	background-image: url(../../img/turn/left-2.svg);
+	background-position: -8px center;
+}
+.setting{
+	background-color: #eee;
+	width: 100%;
+	height: 36px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 11111;
+}
+.setting-k{
+	height: 100%;
+	font-size: 0;
+}
+.setting-k .seticon{
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 26px;
+	height: 26px;
+	margin: 5px 10px 0 10px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+.setting-k .seticon.num{
+	width: auto;
+	font-size: 12px;
+	line-height: 26px;
+}
+.setting-k .seticon.prevpage{
+	background-image: url(../../img/turn/pre0rnext-page.svg);
+	transform: rotate(180deg);
+	background-size: 50px auto;
+}
+.setting-k .seticon.voice{
+	background-image: url(../../img/turn/audio_open.svg);
+	background-size: 40px auto;
+}
+.setting-k .seticon.nextpage{
+	background-image: url(../../img/turn/pre0rnext-page.svg);
+	background-size: 50px auto;
+}
+.setting-k .seticon.ones{
+	background-image: url(../../img/turn/firstorlast-page.svg);
+	transform:rotate(180deg);
+	background-size: 50px auto;
+}
+.setting-k .seticon.lsats{
+	background-image: url(../../img/turn/firstorlast-page.svg);
+	background-size: 50px auto;
+}
+.seticon.menu{
+	background-image: url(../../img/turn/contents.svg);
+	background-size: 18px 18px;
+}
+.seticon.view{
+	background-image: url(../../img/turn/theme_view.svg);
+	background-size: 50px 50px;;
+}
+.seticon.screen{
+	background-image: url(../../img/turn/full-screen.svg);
+	background-size: 46px 46px;
+}
+.seticon.screen.exit{
+	background-image: url(../../img/turn/exit-full-screen.svg);
+}
+.seticon.play{
+	background-image: url(../../img/turn/play.svg);
+	background-size: 32px 32px;
+}
+.seticon.togo{
+	background-image: url(../../img/turn/togo.png);
+	background-size: 16px auto;
+}
+.seticon.down{
+	background-image: url(../../img/turn/pdf.svg);
+	background-size: 18px 18px;
+}
+/*目录弹出样式*/
+.menu{
+	position: relative;
+}
+.menu-src{
+	position: absolute;
+	min-width: 300px;
+	top: 39px;
+	left: -20px;
+	display: none;
+}
+.menu-src .bg{
+	position: fixed;
+	width: 2000px;
+	height: 2000px;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	cursor: default;
+}
+.menu-src .srcs{
+	padding: 10px 10px;
+	color: #000;
+	background-color: white;
+	font-size: 14px;
+	text-align: left;
+	white-space: nowrap;
+	cursor: pointer;
+	position: relative;
+	z-index: 11;
+}
+/*图集*/
+.pics{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1111111;
+	display: none;
+	background-color: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+}
+.pic-k{
+	width: 90%;
+	height: 80%;
+	margin: 50px auto 0 auto;
+}
+.pic-k img{
+	display: block;
+	float: left;
+	width: 10%;
+	margin: 10px 1%;
+	cursor: pointer;
+}
+.now {
+	border: none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+	font-size: 12px;
+	text-align: right;
+	width: 20px;
+	outline: none;
+}
+.zong{
+	display: inline-block;
+	width: 20px;
+	text-align: left;
+}
+.bookpic{
+	display: none;
+}
