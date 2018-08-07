@@ -6,7 +6,8 @@ html,body{
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
-	background: url(../../img/turn/bg.jpg) 100% 100%;
+	/*background: url(../../img/turn/bg.jpg);*/
+	background-color: black;
 }
 .book{
 	position:fixed;
@@ -281,6 +282,10 @@ html,body{
 	background-image: url(../../img/turn/play.svg);
 	background-size: 32px 32px;
 }
+.seticon.play.ac{
+	background-image: url(../../img/turn/pause.svg);
+	background-size: 32px 32px;
+}
 .seticon.togo{
 	background-image: url(../../img/turn/togo.png);
 	background-size: 16px auto;
@@ -350,7 +355,7 @@ html,body{
 	background-color: rgba(0,0,0,0);
 	font-size: 12px;
 	text-align: right;
-	width: 20px;
+	width: 50px;
 	outline: none;
 }
 .zong{

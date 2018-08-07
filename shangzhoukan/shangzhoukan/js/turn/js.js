@@ -1,13 +1,16 @@
-var b_width = 760,
-	b_height = 500,
+//比例760:500
+var b_height = $("body").height()-80,
+	b_width = b_height/500*760,
 	nowpage = 1,
 	maxWidth = 876,
 	fenye = "double";
+	
+	
 $(".book").css({
 	"width":b_width,
 	"height":b_height,
 	"margin-left":-b_width/2,
-	"margin-top":-b_height/2
+	"margin-top":-b_height/2+17
 })
 $("#flipbook .own-size").css({
 	"width":b_width/2-10,
@@ -116,17 +119,13 @@ $(".play").click(function(){
 			}else{
 				books.turn("next");
 			}
-		},2000)
-		$(this).css({
-			"background-image":"url(img/turn/pause.svg)"
-		})
+		},2000);
+		$(this).addClass("ac");
 		autoflag = 1;
 	}else{
 		clearInterval(autoplay);
 		autoflag = 0;
-		$(this).css({
-			"background-image":"url(img/turn/play.svg)"
-		})
+		$(this).removeClass("ac");
 	}
 })
 $(".menu").on("click",function(e){

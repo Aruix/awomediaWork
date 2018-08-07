@@ -94,15 +94,17 @@
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
 	background: url(../img/left1.png);
-	height: 56px;
-	width: 30px;
-	margin-top: -28px;
+	background-size: 100% 100%;
+	height: 46px;
+	width: 26px;
+	margin-top: -23px;
 }
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
 	background: url(../img/right1.png);
-	height: 56px;
-	width: 30px;
-	margin-top: -28px;
+	background-size: 100% 100%;
+	height: 46px;
+	width: 26px;
+	margin-top: -23px;
 }
 #certify .swiper-container{
 	padding-bottom: 0;

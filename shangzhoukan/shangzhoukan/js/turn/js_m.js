@@ -78,17 +78,13 @@ $(".play").click(function(){
 			}else{
 				books.turn("next");
 			}
-		},2000)
-		$(this).css({
-			"background-image":"url(img/turn/pause.svg)"
-		})
+		},5000)
+		$(this).addClass("ac");
 		autoflag = 1;
 	}else{
 		clearInterval(autoplay);
 		autoflag = 0;
-		$(this).css({
-			"background-image":"url(img/turn/play.svg)"
-		})
+		$(this).removeClass("ac");
 	}
 })
 $("#flipbook").click(function(){
