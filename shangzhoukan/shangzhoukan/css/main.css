@@ -22,7 +22,7 @@ img{
 .main{
 	width: 1200px;
 	margin: auto;
-	height: 60px;
+	height: 70px;
 }
 .header{
 	background-color: #fcfcfc;
@@ -36,34 +36,35 @@ img{
 	margin-right: 4px;
 }
 .logo{
-	margin: 8px 64px auto 23px;
+	margin: 10px 74px auto 32px;
 	display: block;
-	width: 102px;
-	height: 44px;
+	width: 84px;
+	height: 50px;
 }
 .nav{
 	height: 100%;
 }
 .nav a{
 	height: 100%;
-	line-height: 60px;
+	line-height: 68px;
 	margin-right: 40px;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 18px;
 	/*font-weight: 600;*/
 }
 .nav a.active,.nav a:hover{
 	color: #3f69ab;
 	border-bottom: 4px solid #3f69ab;
-	height: 58px;
-	font-weight: bold;
+	height: 66px;
+	/* font-weight: bold; */
+	font-size: 21px;
 }
 .search{
 	width: 240px;
 	height: 26px;
 	border: 1px solid #bebebe;
 	border-radius: 30px;
-	margin-top: 16px;
+	margin-top: 20px;
 	position: relative;
 }
 .search input[type=submit]{
@@ -99,6 +100,7 @@ a.swiper-slide img{
 	display: block;
 	width: 100%;
 	height: auto;
+	min-height: initial;
 }
 #indexBnaner .swiper-wrapper,#indexBnaner .swiper-slide{
 	height: auto!important;
@@ -199,13 +201,13 @@ a.swiper-slide img{
 	overflow: hidden;
 }
 .list1 .imgk{
-	width: 300px;
-	height: 200px;
+	width: 192px;
+	height: 128px;
 	float: left;
-	margin-right: 24px;
+	margin-right: 20px;
 }
 .list1 .text{
-	height: 200px;
+	height: 128px;
 	/*padding-left: 330px;*/
 	position: relative;
 }
@@ -224,13 +226,13 @@ a.swiper-slide img{
 	left: 0;
 }
 .author{
-	left: 330px;
+	left: 212px;
 }
 .list1 .title-text{
 	display: block;
 	color: #000;
-	font-size: 22px;
-	margin-top: 13px;
+	font-size: 24px;
+	padding-top: 8px;
 }
 .list1 .desc{
 	color: #8e8e8e;
@@ -242,7 +244,7 @@ a.title-text:hover{
 }
 .list1 .author,.list1 .view{
 	position: absolute;
-	bottom: 20px;
+	bottom: 14px;
 	font-size: 14px;
 	color: #a7a6a6;
 }
@@ -297,6 +299,8 @@ a.title-text:hover{
 }
 .right-list1 img{
 	border: 1px solid #f5f6f7;
+	height: auto;
+	min-height: initial;
 }
 .right-list1 .text{
 	text-align: center;
@@ -321,8 +325,10 @@ a.title-text:hover{
 	background-color: #f3f4f5;
 	height: 30px;
 }
-.ads img{
+.ads img,.ad img{
 	display: block;
+	height: auto;
+	min-height: initial;
 }
 .content-right .tag-k{
 	margin: 0 0 0 24px;
@@ -346,6 +352,8 @@ a.title-text:hover{
 .content-right .follow-k img{
 	width: auto;
 	margin: auto;
+	height: auto;
+	min-height: initial;
 }
 .content-right .follow-k>span{
 	font-size: 15px;
@@ -360,7 +368,7 @@ a.title-text:hover{
 }
 .follow-k .text img{
 	display: inline;
-	margin-top: 2px;
+	/* margin-top:2px; */
 }
 .follow-k .text a{
 	color: #1863e1;
@@ -397,6 +405,9 @@ a.title-text:hover{
 }
 img.f-l{
 	margin-right: 18px;
+	width: 101px!important;
+	height: auto!important;
+	min-height: initial!important;
 }
 .footer .f-l{
 	float: left;
@@ -413,7 +424,7 @@ img.f-l{
 	left: 0;
 	display: none;
 }
-.erm-wb img,.erm-wx img{
+.footer .f-r .erm-wb img,.footer .f-r .erm-wx img{
 	display: block;
 	width: 100%;
 	height: auto!important;
@@ -431,6 +442,9 @@ img.f-l{
 }
 .footer .f-r img{
 	display: inline-block;
+	width: 45px;
+	height: 45px;
+	min-height: initial;
 }
 /*独家、动态*/
 .content-left .top-ban{
@@ -574,6 +588,13 @@ img.f-l{
 	font-size: 26px;
 	margin: 30px ;
 }
+.news-k img{
+	display: inline-block;
+	max-width: 100%!important;
+	height: auto!important;
+	min-height: initial!important;
+	margin-left: -2em;
+}
 .content-left .news-k .txt{
 	margin: 0 30px;
 	border-bottom: 2px solid #f3f3f3;
@@ -594,6 +615,9 @@ img.f-l{
 }
 .news-content{
 	margin: 26px;
+}
+.news-content>p,.news-content>div{
+	text-indent: 2em;
 }
 .content-left .pro-top{
 	background-color: #f3f4f5;
@@ -912,4 +936,18 @@ img.f-l{
 	float: right;
 	background-color: white;
 	padding: 40px;
+}
+/* 搜索 */
+.search-ks .list1 .imgk{
+	width: 300px;
+	height: 200px;
+}
+.search-ks .list1 .text{
+	height: 200px;
+}
+.search-ks .list1.noimg .text{
+	height: auto;
+}
+.search-ks .author{
+	left: 326px;
 }
