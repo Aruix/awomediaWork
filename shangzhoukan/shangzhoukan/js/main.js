@@ -35,4 +35,17 @@ window.onload = function(){
 		    mySwiper.swipeNext()
 		})
 	};
+	function onFooter(){
+		if($("body").height()<$(window).height()){
+			$(".footer").css({
+				"width":"100%",
+				"position":"fixed",
+				"bottom":0
+			})
+		}
+	}
+	onFooter();
+	window.onresize = function(){
+		onFooter();
+	}
 }
