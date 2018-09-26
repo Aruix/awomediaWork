@@ -627,12 +627,21 @@ img.f-l{
 	color: #333333;
 }
 .news-content p,.news-content div{
+	/* -webkit-text-size-adjust: none; */
+	/* text-indent: 32px; */
+	width: 100%;
 	font-size: 16px;
 	line-height: 30px;
 	color: #333333;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	text-indent: 2em;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.news-content p::before,.news-content div::before{
+	display: inline;
+	content: "两字";
+	opacity: 0;
 }
 .news-content font{
 	color: #333333;

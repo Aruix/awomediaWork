@@ -1,4 +1,18 @@
 $(function(){
+	var u = navigator.userAgent; 
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端 
+	if(isiOS){
+// .news-content p,.news-content div{
+		$('.news-content p').css({
+			'-webkit-text-size-adjust':"none",
+			"font-size":"26px"
+		})
+		$('.news-content div').css({
+			'-webkit-text-size-adjust':"none",
+			"font-size":"26px"
+		})
+		console.log(123);
+	}
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 100){
              $('.totop').fadeIn();
