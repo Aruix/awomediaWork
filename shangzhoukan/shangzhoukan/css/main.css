@@ -22,10 +22,10 @@ img{
 .main{
 	width: 1200px;
 	margin: auto;
-	height: 70px;
+	height: 86px;
 }
 .header{
-	background-color: #fcfcfc;
+	background-color: #172d69;
 	height: auto;
 }
 .logo,.nav{
@@ -36,36 +36,37 @@ img{
 	margin-right: 4px;
 }
 .logo{
-	margin: 10px 74px auto 32px;
+	margin: 10px 54px auto 32px;
 	display: block;
-	width: 84px;
-	height: 50px;
+	width: 116px;
+	height: 69px;
 }
 .nav{
 	height: 100%;
 }
 .nav a{
 	height: 100%;
-	line-height: 68px;
+	line-height: 86px;
 	margin-right: 40px;
 	display: inline-block;
-	font-size: 18px;
+	font-size: 28px;
+	color: #ffffff;
 	/*font-weight: 600;*/
 }
 .nav a.active,.nav a:hover{
-	color: #3f69ab;
-	border-bottom: 4px solid #3f69ab;
-	height: 66px;
-	/* font-weight: bold; */
-	font-size: 21px;
+	color: #ffffff;
+	border-bottom: 4px solid #ffffff;
+	height: 82px;
+	font-size: 28px;
 }
 .search{
-	width: 240px;
-	height: 26px;
+	width: 148px;
+	height: 32px;
 	border: 1px solid #bebebe;
 	border-radius: 30px;
-	margin-top: 20px;
+	margin-top: 28px;
 	position: relative;
+	background-color: #ffffff;
 }
 .search input[type=submit]{
 	position: absolute;
@@ -108,15 +109,17 @@ a.swiper-slide img{
 }
 #indexBnaner .pagination{
 	position: absolute;
+	width: 1200px;
 	bottom: 34px;
-	width: 100%;
-	text-align: center;
+	left: 50%;
+	margin-left: -600px;
+	text-align: right;
 	z-index: 1111;
 }
 #indexBnaner .swiper-pagination-switch{
 	cursor: pointer;
 	display: inline-block;
-	margin: auto 10px;
+	margin: auto 0 auto 17px;
 	width: 10px;
 	height: 10px;
 	border-radius: 10px;
@@ -163,13 +166,13 @@ a.swiper-slide img{
 }
 .content-left{
 	float: left;
-	width: 876px;
+	width: 916px;
 	background-color: white;
 	padding-bottom: 36px;
 }
 .content-right{
 	float: right;
-	width: 306px;
+	width: 265px;
 	background-color: white;
 }
 .title{
@@ -201,13 +204,13 @@ a.swiper-slide img{
 	overflow: hidden;
 }
 .list1 .imgk{
-	width: 192px;
-	height: 128px;
+	width: 306px;
+	height: 204px;
 	float: left;
-	margin-right: 20px;
+	margin-right: 26px;
 }
 .list1 .text{
-	height: 128px;
+	height: 204px;
 	/*padding-left: 330px;*/
 	position: relative;
 }
@@ -226,12 +229,12 @@ a.swiper-slide img{
 	left: 0;
 }
 .author{
-	left: 212px;
+	left: 332px;
 }
 .list1 .title-text{
 	display: block;
 	color: #000;
-	font-size: 24px;
+	font-size: 34px;
 	padding-top: 8px;
 }
 .list1 .desc{
@@ -244,7 +247,7 @@ a.title-text:hover{
 }
 .list1 .author,.list1 .view{
 	position: absolute;
-	bottom: 14px;
+	bottom: 12px;
 	font-size: 14px;
 	color: #a7a6a6;
 }
@@ -295,7 +298,7 @@ a.title-text:hover{
 }
 .right-list1{
 	display: block;
-	margin: 26px 42px 24px 42px;
+	margin: 26px 22px 24px 22px;
 }
 .right-list1 img{
 	border: 1px solid #f5f6f7;
@@ -391,7 +394,7 @@ a.title-text:hover{
 }
 /*页脚*/
 .footer{
-	background-color: #1a1818;
+	background-color: #172d69;
 	color: #7b7e7f;
 	font-size: 12px;
 }
@@ -431,11 +434,12 @@ img.f-l{
 	min-height: auto!important;
 }
 .footer .txt-top a{
-	color: #7b7e7f;
+	color: #e7e7e7;
 	margin-right: 6px;
 }
 .footer .txt-bottom{
 	margin-top:6px;
+	color: #e7e7e7;
 }
 .footer .f-r a{
 	margin-left: 16px;
@@ -495,6 +499,22 @@ img.f-l{
 }
 .top-ban-right #indexBnaner .swiper-pagination-switch{
 	margin: auto 5px;
+}
+#indexBnaner .title{
+	position: absolute;
+	bottom: 0;
+	height: 88px;
+	width: 100%;
+	padding-left: 0;
+	background-color: rgba(0,0,0,.4);
+}
+#indexBnaner .title .txt{
+	display: none;
+	line-height: 88px;
+	font-size: 32px;
+	color: #ffffff;
+	width: 1200px;
+	margin: auto;
 }
 .top-ban .ban-list{
 	display: block;

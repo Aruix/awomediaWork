@@ -35,10 +35,14 @@ $(function(){
 window.onload = function(){
 	if($("#indexBnaner").length>0){
 		var mySwiper = new Swiper('#indexBnaner .swiper-container',{
-			loop: true,
+			// loop: true,
 			pagination:".pagination",
 			grabCursor: true,
-    		paginationClickable: true
+			paginationClickable: true,
+			onSlideChangeEnd: function(swiper){
+				var index = swiper.activeIndex;
+				$('#indexBnaner .title').children('.txt').css("display","none").eq(index).css("display","block")
+			}
 		}); 
 		$('#indexBnaner .pre').on('click', function(e){
 			e.preventDefault()
