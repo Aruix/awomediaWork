@@ -1,6 +1,7 @@
 $(function(){
 	var u = navigator.userAgent; 
 	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端 
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端 
 	if(isiOS){
 // .news-content p,.news-content div{
 		$('.news-content p').css({
@@ -12,6 +13,12 @@ $(function(){
 			"font-size":"26px"
 		})
 		console.log(123);
+	}
+	if(isiOS || isAndroid){
+		$('.list1 .title-text').css({
+			'-webkit-text-size-adjust':"none",
+			"font-size":"36px"
+		})
 	}
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 100){
